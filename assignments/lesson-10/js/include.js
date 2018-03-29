@@ -19,3 +19,5 @@ function include() {
       }
     } 
 }
+// initial call to the include function
+include();
