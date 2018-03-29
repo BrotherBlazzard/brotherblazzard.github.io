@@ -1,0 +1,41 @@
+* { margin: 0; box-sizing: border-box; } 
+
+body { 
+    font-size: 16px; 
+    line-height: 2;
+    font-family: helvetica, consolas, sans-serif;
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2.0rem;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+}
+
+header, nav, main, footer {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 960px;
+}
+
+header, footer, footer a {
+    text-align: center;
+    background-color: navy;
+    color: #fff;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+    float: right;
+    box-shadow: 2px 2px 3px #333;
+}
+
+footer {
+    font-size: smaller;
+}
