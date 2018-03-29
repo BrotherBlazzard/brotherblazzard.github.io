@@ -7,13 +7,13 @@ function include() {
           xhttp = new XMLHttpRequest();
           xhttp.onreadystatechange = function() {
               if (this.readyState == 4) { // if the operation is complete
-                  if (this.status == 200) { allElements[i].innerHTML = "includes/" + this.responseText;} // OK request
+                  if (this.status == 200) { allElements[i].innerHTML = this.responseText;} // OK request
                   if (this.status == 400) { allElements[i].innerHTML = "Page not found!";}
                   allElements[i].removeAttribute('include');
                   include(); // call the function again to start the process over after an error was found
               }
           }
-          xhttp.open('GET', file, true);
+          xhttp.open('GET', 'includes/' + file, true);
           xhttp.send();
           return; // exit the function
       }
