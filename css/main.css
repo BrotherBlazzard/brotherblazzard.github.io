@@ -15,6 +15,7 @@ h2 {
     font-size: 2.0rem;
     text-align: center;
     border-bottom: 1px solid #bbb;
+    padding-bottom: -.25rem;
 }
 
 header, nav, main, footer {
@@ -30,7 +31,7 @@ header, footer, footer a {
 }
 
 header img {
-    width: 150px;
+    width: 200px;
     height: auto;
     float: right;
     box-shadow: 2px 2px 3px #333;
