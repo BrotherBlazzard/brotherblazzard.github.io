@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Jason B. Blazzard - author
+
+# THANKS
+
+    HTML5 Bootstrap | AndreasViklund | BYU-Idaho
+
+# TECHNOLOGY COLOPHON
+
+    Contempory CSS, HTML
+    normalize.css
