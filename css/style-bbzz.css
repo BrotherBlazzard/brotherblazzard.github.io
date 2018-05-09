@@ -38,3 +38,12 @@ header img {
 footer {
     font-size: smaller;
 }
+
+code {
+    font-family:'Courier New', Courier, Consolas, sans-serif;
+    padding: .35rem;
+    font-size: larger;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #000;
+}
