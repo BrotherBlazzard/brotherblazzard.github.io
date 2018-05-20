@@ -1,0 +1,423 @@
+@charset "UTF-8";
+html, body {
+    height: 100%;
+    line-height: 2;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    background-color: #fff;
+    vertical-align: middle;
+}
+
+a {
+    background-color: transparent;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 2px #777;
+    font-family: Roboto, Ubuntu, sans-serif;
+}
+
+h2 {
+    font-size: 2.1rem;
+    text-align: center;
+    text-shadow: 2px 2px 2px #777;
+    padding: 5px;
+    background: radial-gradient(circle, #3377aa, #fff);
+    color: #fff;
+}
+
+h3 {
+    font-size: 1.4rem;
+    text-align: center;
+    text-shadow: 2px 2px 2px #444;
+    padding: 4px;
+    background: radial-gradient(circle, #444, #fff);
+    color: #fff;
+}
+
+p {
+    margin: 0 0 1rem;
+}
+
+header,
+nav,
+main,
+footer {
+    margin: 0px auto;
+    max-width: 87em;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#subnav {
+    background: radial-gradient(ellipse, #333, #fff);
+}
+
+#subnav a {
+    color: #fff;
+    display: block;
+    padding: .25rem .75rem;
+    text-decoration: none;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+main {
+    padding: .25rem;
+    background: radial-gradient(circle, #4488bb, #fff);
+    color: #222;
+    overflow: auto;
+}
+
+main img.icon {
+    width: 65px;
+    height: auto;
+    margin: 5px;
+}
+
+main video {
+    height: auto;
+    border: 1px solid #777;
+    padding: .5rem;
+    margin: 2rem auto 2rem;
+}
+
+section {
+    margin: 5px auto;
+    border: 1px solid #bbb;
+    padding: 7px;
+    background-color: #fff;
+    color: #333;
+    width: 100%;
+    white-space: unset;
+    word-wrap: break-word;
+}
+
+table {
+    margin: 5px auto;
+    border: 1px solid #eee;
+}
+
+th,
+td {
+    padding: 5px;
+    border: 1px solid #bbb;
+    text-align: center;
+}
+
+th {
+    background-color: #ccc;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+tr:nth-child(odd) {
+    background-color: #ddd;
+}
+
+td:nth-child(1) {
+    text-align: right;
+}
+
+section ul {
+    margin-bottom: 0px;
+}
+
+section li {
+    list-style-type: none;
+}
+
+footer {
+    color: #000;
+    padding-top: 1.2rem;
+    text-align: center;
+    font-size: 1.1rem;
+    letter-spacing: 1.5pt;
+    clear: both;
+}
+
+footer img {
+    width: 30px;
+    height: auto;
+}
+
+address {
+    padding: 7px;
+    display: table-cell;
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: .95em;
+    background-color: #eee;
+}
+
+#date {
+    font-family: Consolas, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-stretch: semi-condensed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: saddlebrown;
+    padding-top: .35rem;
+}
+
+input {
+    margin-left: 5px;
+}
+
+legend {
+    font-weight: 700;
+    font-stretch: expanded;
+}
+
+code {
+    background-color: #eee;
+    border: 1px solid #aaa;
+    font-family: Consolas, 'Courier New', Courier, monospace;
+    display: inline-block;
+}
+
+/* Class Selectors - warning on growth */
+
+.blazzlogo {
+    font-family: 'Macondo', cursive;
+}
+
+.gridlayout {
+    display: grid;
+    grid-gap: .25rem;
+    grid-template-columns: 1fr;
+}
+
+.tablesubrow {
+    background-color: darkgray;
+    font-weight: 700;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 177px;
+    max-width: 1170px;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: table;
+}
+
+.column1,
+.column2 {
+    display: table-cell;
+    background-color: #fff;
+}
+
+.row:before,
+.row:after {
+    display: table;
+    content: " ";
+}
+
+.date {
+    font-size: .9em;
+    color: red;
+    margin: 10px 0px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.supercenter {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.lead {
+    font-size: 21px;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+.instructions,
+.warning,
+.error,
+.success,
+code,
+.credentials,
+.questions {
+    margin: 7px auto;
+    padding: 7px;
+    width: 94%;
+    font-size: .9em;
+    color: #000;
+    text-align: left;
+}
+
+.instructions {
+    background-color: #ddeeff;
+    border-left: 5px solid #000087;
+}
+
+.success {
+    background-color: #ddeebb;
+    border-left: 5px solid #008700;
+}
+
+.warning {
+    background-color: #ffffdc;
+    border-left: 5px solid #9f6000;
+    border-bottom: 1px solid #9f6000;
+}
+
+.error {
+    background-color: #E7F4FF;
+    border-left: 5px solid #C9DDFA;
+}
+
+.credentials {
+    background-color: #eee;
+    border: 1px solid #aaa;
+}
+
+.socialmedia {
+    text-align: center;
+}
+
+.socialmedia img {
+    border: 0;
+    width: 64px;
+    height: 64px;
+    display: table-row;
+}
+
+.internalLinks,
+.externalLinks {
+    text-align: left;
+}
+
+.internalLinks ul,
+.externalLinks ul {
+    list-style: none;
+}
+
+.multiple-choice ol {
+    list-style-type: upper-alpha;
+}
+
+.row:before,
+.row:after {
+    display: table;
+    content: " ";
+}
+
+.twocolumncontain {
+    margin: 0 auto;
+    overflow: auto;
+    width: 770px;
+}
+
+.twocolumn {
+    margin-right: 10px;
+    width: 375px;
+    text-align: left;
+    border: none;
+    float: left;
+}
+
+#logo {
+    float: right;
+    display: inline-flex;
+}
+
+.no-dec {
+    text-decoration: none;
+}
+
+.green {
+    color: #009000;
+}
+
+.brown {
+    color: saddlebrown;
+}
+
+.menuitems {
+    font-size: 1.5em;
+    color: #333;
+    text-shadow: 2px 2px 2px #eee;
+}
+
+.menu-item {
+    font-size: 1.5em;
+    margin-right: 15px;
+    font-weight: 700;
+    color: #000;
+}
+
+.menu-item a:hover {
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 48em) {
+    video {
+        display: inline;
+    }
+    nav ul li {
+        display: inline-block;
+    }
+    section {
+        width: 95%;
+    }
+    h1 {
+        font-size: 3.50rem;
+    }
+    h2 {
+        font-size: 2.50rem;
+    }
+    h3 {
+        font-size: 1.50em;
+        padding: 10px;
+        border: 1px solid #eee;
+    }
+    nav a {
+        display: inline;
+    }
+    .menu-item {
+        font-size: 2.5rem;
+        margin-right: 1rem;
+    }
+    th {
+        font-size: 1.75rem;
+    }
+    .gridlayout {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 67em) {
+    .gridlayout {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .gridmax {
+        grid-template-columns: 1fr 1fr;
+    }
+}
