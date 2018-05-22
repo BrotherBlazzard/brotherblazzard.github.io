@@ -1,7 +1,7 @@
 @charset "UTF-8";
 html, body {
     height: 100%;
-    line-height: 2;
+    line-height: 1;
 }
 
 html {
@@ -20,13 +20,13 @@ a {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     text-shadow: 2px 2px 2px #777;
     font-family: Roboto, Ubuntu, sans-serif;
 }
 
 h2 {
-    font-size: 2.1rem;
+    font-size: 1rem;
     text-align: center;
     text-shadow: 2px 2px 2px #777;
     padding: 5px;
@@ -35,7 +35,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.4rem;
+    font-size: .9rem;
     text-align: center;
     text-shadow: 2px 2px 2px #444;
     padding: 4px;
@@ -97,12 +97,16 @@ main video {
 section {
     margin: 5px auto;
     border: 1px solid #bbb;
-    padding: 7px;
+    padding: 5px;
     background-color: #fff;
     color: #333;
     width: 100%;
     white-space: unset;
     word-wrap: break-word;
+}
+
+ol {
+    margin:0;
 }
 
 table {
