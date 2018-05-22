@@ -85,7 +85,7 @@ code {
     border: 1px solid #000;
 }
 
-@media (min-width: 32.5rem;
+@media (min-width: 37.5rem;
 ) {
     main {
         grid-template-columns: 1fr 1fr;
