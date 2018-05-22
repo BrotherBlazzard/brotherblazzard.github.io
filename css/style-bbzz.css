@@ -1,9 +1,10 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
 
-
-* { margin: 0; box-sizing: border-box; } 
-
-body { 
-    font-size: 16px; 
+body {
+    font-size: 16px;
     line-height: 2;
     font-family: helvetica, consolas, sans-serif;
     color: #333;
@@ -18,34 +19,82 @@ h2 {
     text-align: center;
 }
 
-header, nav, main, footer {
-    margin: 1.25rem auto;
-    padding: .75rem;
-    max-width: 64rem;
-}
-
-header, footer, footer a {
+header,
+footer {
+    width: 100%;
+    padding: 1rem;
     text-align: center;
-    background-color: navy;
     color: #fff;
+    box-shadow: 0px 10px 10px #bbb;
+    background: radial-gradient(circle, blue, navy)
 }
 
 header img {
-    width: 250px;
+    width: 64px;
     height: auto;
-    float: right;
-    box-shadow: 3px 3px 3px #444;
+    float: left;
+    margin-right: 15px;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+}
+
+header nav li {
+    flex: 1 1 100%;
+}
+
+header nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: .75rem;
+    text-decoration: none;
+    font-size: .9rem;
+}
+
+main {
+    display: grid;
+    grid-gap: .25rem;
+    grid-template-columns: 1fr;
+    max-width: 76rem;
 }
 
 footer {
     font-size: smaller;
 }
 
+footer a {
+    color:#fff;
+}
+
+footer a:visited {
+    color:yellow;
+}
+
 code {
-    font-family:'Courier New', Courier, Consolas, sans-serif;
+    font-family: 'Courier New', Courier, Consolas, sans-serif;
     padding: .35rem;
     font-size: larger;
     background-color: #333;
     color: #fff;
     border: 1px solid #000;
+}
+
+@media (min-width: 32.5rem;
+) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 64rem;
+) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
