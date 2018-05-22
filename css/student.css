@@ -54,6 +54,7 @@ main,
 footer {
     margin: 0px auto;
     max-width: 87em;
+    font-size: .85rem;
 }
 
 header {
@@ -410,6 +411,10 @@ code,
     }
     .gridlayout {
         grid-template-columns: 1fr 1fr;
+    }
+
+    footer {
+        fonts-size: .95rem;
     }
 }
 
