@@ -1,7 +1,7 @@
 @charset "UTF-8";
 html, body {
     height: 100%;
-    line-height: 1;
+    line-height: 1.4;
 }
 
 html {
@@ -13,6 +13,7 @@ body {
     display: table-cell;
     background-color: #fff;
     vertical-align: middle;
+    font-family: Roboto, 'Seguo UI', 'Lucida Sans', Verdana, sans-serif;
 }
 
 a {
@@ -105,8 +106,15 @@ section {
     word-wrap: break-word;
 }
 
+section ol li a:hover {
+    background-color: #9f6000;
+    color:#fff;
+    padding: 4px;
+    text-decoration: none;
+}
+
 ol {
-    margin:0;
+    
 }
 
 table {
@@ -136,13 +144,6 @@ td:nth-child(1) {
     text-align: right;
 }
 
-section ul {
-    margin-bottom: 0px;
-}
-
-section li {
-    list-style-type: none;
-}
 
 footer {
     color: #000;
@@ -194,10 +195,6 @@ code {
 }
 
 /* Class Selectors - warning on growth */
-
-.blazzlogo {
-    font-family: 'Macondo', cursive;
-}
 
 .gridlayout {
     display: grid;
@@ -278,23 +275,22 @@ code,
 
 .instructions {
     background-color: #ddeeff;
-    border-left: 5px solid #000087;
+    border-left: 2px solid #000087;
 }
 
 .success {
     background-color: #ddeebb;
-    border-left: 5px solid #008700;
+    border-left: 2px solid #008700;
 }
 
 .warning {
     background-color: #ffffdc;
-    border-left: 5px solid #9f6000;
-    border-bottom: 1px solid #9f6000;
+    border-left: 2px solid #9f6000;
 }
 
 .error {
     background-color: #E7F4FF;
-    border-left: 5px solid #C9DDFA;
+    border-left: 2px solid #C9DDFA;
 }
 
 .credentials {
