@@ -390,13 +390,13 @@ code,
         width: 95%;
     }
     h1 {
-        font-size: 3.50rem;
+        font-size: 2.0rem;
     }
     h2 {
-        font-size: 2.50rem;
+        font-size: 1.50rem;
     }
     h3 {
-        font-size: 1.50em;
+        font-size: 1.250em;
         padding: 10px;
         border: 1px solid #eee;
     }
@@ -404,7 +404,7 @@ code,
         display: inline;
     }
     .menu-item {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         margin-right: 1rem;
     }
     th {
