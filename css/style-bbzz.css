@@ -1,42 +1,56 @@
+:root {
+    --root-blue:rgba(0, 0, 100, 1);
+    --l2-blue:rgba(0, 0, 100, .75);
+    --l3-blue:rgba(0, 0, 100, .50);
+    --l4-blue:rgba(0, 0, 100, .25);
+}
+
 * {
-    margin: 0;
     box-sizing: border-box;
 }
 
 body {
     font-size: 16px;
     line-height: 2;
-    font-family: helvetica, consolas, sans-serif;
-    color: #333;
+    font-family: Montserrat, consolas, sans-serif;
+    color: var(--root-blue);
+    display: table-cell;
+    vertical-align: middle;
 }
 
-h1 {
-    font-size: 2.1rem;
-}
-
-h2 {
-    font-size: 1.5rem;
-    text-align: center;
+header, main, footer {
+    max-width: 84rem;
+    margin: 0 auto;
 }
 
 header,
 footer {
-    width: 100%;
-    padding: 1rem;
-    text-align: center;
+    padding: .5rem;
+    justify-content: center;
+    align-items: center;
     color: #fff;
     box-shadow: 0px 10px 10px #bbb;
-    background: radial-gradient(circle, blue, navy)
+    background: radial-gradient(circle,var(--root-blue), var(--l2-blue));
+    border-radius: 5px;
 }
 
-header img {
-    width: 64px;
-    height: auto;
-    float: left;
-    margin-right: 15px;
+header {
+
 }
 
-header nav ul {
+h1, h2, h3, h4 {margin:0;}
+
+h1 {
+    font-size: 2.1rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.head-nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -44,17 +58,23 @@ header nav ul {
     display: flex;
 }
 
-header nav li {
+.head-nav li {
     flex: 1 1 100%;
 }
 
-header nav a {
+.head-nav a {
     display: block;
     color: #fff;
     text-align: center;
     padding: .75rem;
     text-decoration: none;
     font-size: .9rem;
+}
+
+.head-nav a:hover {
+    background-color: #fff;
+    color: var(--root-blue);
+    
 }
 
 main {
