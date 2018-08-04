@@ -24,4 +24,4 @@ let month = new Array(12);
  month[11] = "December";
 
 
-document.getElementByClassName("currentDate").innerHTML = weekday[d.getDay()] + ", " + d.getDate() + " " + month[d.getMonth()] + " " + d.getFullYear();
+document.getElementById("currentDate").innerHTML = weekday[d.getDay()] + ", " + d.getDate() + " " + month[d.getMonth()] + " " + d.getFullYear();
