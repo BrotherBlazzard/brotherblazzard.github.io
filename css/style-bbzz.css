@@ -53,6 +53,11 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    font-size: 1rem;
+    color: var(--l3-blue);
+}
+
 .head-nav ul {
     list-style-type: none;
     margin: 0;
@@ -93,6 +98,10 @@ section {
     border: 1px solid #bbb;
 }
 
+ section ul li {
+     font-size: .85rem;
+ }
+
 footer {
     font-size: smaller;
     text-align: center;
@@ -125,12 +134,18 @@ code {
         grid-template-columns: 1fr 1fr;
     }
 
+ 
+
     .head-nav ul {
         display: flex;
     }
 
     .head-nav li {
         flex: 1 1 100%;
+    }
+
+    .head-nav ul:nth-child(first) {
+        display: none;
     }
 }
 
