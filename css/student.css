@@ -100,10 +100,10 @@ main video {
 section {
     margin: 5px auto;
     border: 1px solid #bbb;
-    padding: 5px;
+    padding: .25rem;
     background-color: #fff;
     color: #333;
-    width: 100%;
+    width: 80%;
     white-space: unset;
     word-wrap: break-word;
 }
@@ -201,6 +201,11 @@ code {
 .gridlayout {
     display: grid;
     grid-gap: .25rem;
+    grid-template-columns: 1fr;
+}
+
+.gridone {
+    display: grid;
     grid-template-columns: 1fr;
 }
 
@@ -414,6 +419,8 @@ code,
         grid-template-columns: 1fr 1fr;
     }
 
+
+
     footer {
         fonts-size: .95rem;
     }
@@ -426,4 +433,6 @@ code,
     .gridmax {
         grid-template-columns: 1fr 1fr;
     }
+
+    
 }
