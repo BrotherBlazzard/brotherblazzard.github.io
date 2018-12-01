@@ -1,15 +1,22 @@
+@charset "UTF-8";
+
 :root {
-    --root-blue:rgba(0, 0, 100, 1);
-    --l2-blue:rgba(0, 0, 100, .75);
-    --l3-blue:rgba(0, 0, 100, .50);
-    --l4-blue:rgba(0, 0, 100, .25);
+    /* colors */
+    --root-blue:rgba(50, 50, 100, 1);
+    --l2-blue:rgba(50, 50, 100, .75);
+    --l3-blue:rgba(50, 50, 100, .50);
+    --l4-blue:rgba(50, 50, 100, .25);
+
+    /* layout */
+    --maxwidth: 850px;
 }
 
-* {
-    box-sizing: border-box;
-}
-
+* { box-sizing: border-box; }
+html, body { height: 100%; line-height: 2; }
+html { display: table; margin: auto; box-sizing: border-box; }
 body {
+    display: table-cell;
+    background-color: white;
     font-size: 16px;
     line-height: 2;
     font-family: Montserrat, consolas, sans-serif;
@@ -34,9 +41,6 @@ footer {
     border-radius: 5px;
 }
 
-header {
-
-}
 
 h1, h2, h3, h4 {margin:0;}
 
@@ -85,7 +89,9 @@ main {
 }
 
 footer {
-    font-size: smaller;
+    font-size: .85em;
+    text-align: center;
+    line-height: .5rem;
 }
 
 footer a {
@@ -94,6 +100,11 @@ footer a {
 
 footer a:visited {
     color:yellow;
+}
+
+aside {
+    font-size: .8em;
+    font-variant: small-caps;
 }
 
 code {
