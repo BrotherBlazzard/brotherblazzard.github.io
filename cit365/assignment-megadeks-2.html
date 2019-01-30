@@ -1,0 +1,103 @@
+<div class="byui cit365">
+  <h2>Instructions</h2>
+  <ol>
+  <li>Create a <strong>copy</strong> of your <em>MegaDesk</em> application and name this new project something like <em>MegaDesk1.1YourFirstAndLastName </em></li>
+  <li><span>Sync your finished application to a properly labeled GitHub repository.</span></li>
+  <li>Create a brief video demonstrating the working application remembering that you do NOT need to show code unless there is something specific you want to demonstrate. Narrate your video and demonstrate that your application meets the updated requirements on this new version.</li>
+  <li>Submit the video URL and the GitHub repository URL.</li>
+  </ol>
+  <hr />
+  <h2>Requirements</h2>
+  <ul>
+  <li>Continue from the  <a title="W03 Assignment: MegaDesk Design" href="https://byui.instructure.com/courses/18600/pages/w03-assignment-megadesk-design" data-api-endpoint="https://byui.instructure.com/api/v1/courses/18600/pages/w03-assignment-megadesk-design" data-api-returntype="Page">W03 Assignment: MegaDesk Design</a> requirements.</li>
+  <li>Use at least one instance of <strong>exception handling</strong> with a try/catch block.</li>
+  <li>Create an <strong>enumerated</strong> type for the desktop materials defined within your <em><strong>Desk</strong></em>.cs class.</li>
+  <li>Use at least one instance of a <strong>List&lt;&gt;</strong> class in your application.
+  <ul>
+  <li>Consider using a List of enumerated desktop materials to populate a combo-box of desktop materials when adding a new quote and/or for the search functionality below.</li>
+  </ul>
+  </li>
+  <li>Store the desk quotes in a  <strong>text file</strong> named <em>quotes.txt </em>in comma separated value (csv) format.</li>
+  <li>Add the ability for the user to <strong>SEARCH</strong> through the orders by combo-box selected surface material and display the desk quote with the customer name, quote date, desk specs, and overall price quote.</li>
+  </ul>
+  <p class="info">Initializing the desktop material combo box list using the key-value pairs found in the enum data source can be completed by first populating a variable with a <em>List&lt;DesktopMaterial&gt;</em> type. The challenge is when you <em>GetValues</em> from the enum using <em>Enum.GetValues</em> you will need cast/convert to type <em>DesktopMaterial</em> when running the built in <em>ToList()</em> method. Then this variable (let's name it materials) can be assigned to the DataSource of the combo box (let's name the combo box desktopMaterialComboBox) like this:</p>
+  <p><span style="font-family: 'courier new', courier, sans-serif;">desktopMaterialComboBox.DataSource = materials;</span></p>
+  <p> </p>
+  <table class="ic-Table" style="margin-left: auto; margin-right: auto;" border="1">
+  <tbody>
+  <tr>
+  <th style="background-color: #326ba9; color: #ffffff;" colspan="3">Pricing Structure</th>
+  </tr>
+  <tr>
+  <td style="text-align: right; vertical-align: middle;">Base Desk Price  </td>
+  <td style="text-align: left;"> $200</td>
+  <td style="text-align: left;"> each</td>
+  </tr>
+  <tr>
+  <td style="text-align: right; vertical-align: middle;">Desktop Surface Area &gt; 1000 in<sup>2  </sup></td>
+  <td style="text-align: left;"> $1</td>
+  <td style="text-align: left;"> per in<sup>2</sup></td>
+  </tr>
+  <tr>
+  <td style="text-align: right; vertical-align: middle;">Drawers  </td>
+  <td style="text-align: left;"> $50</td>
+  <td style="text-align: left;"> per drawer</td>
+  </tr>
+  <tr>
+  <td style="text-align: center; vertical-align: middle; background-color: #c0c0c0;" colspan="3"><strong>Surface Materials</strong></td>
+  </tr>
+  <tr>
+  <td style="text-align: right; vertical-align: middle;">Oak  </td>
+  <td style="text-align: left;" colspan="2"> $200</td>
+  </tr>
+  <tr>
+  <td style="text-align: right; vertical-align: middle;">Laminate  </td>
+  <td style="text-align: left;" colspan="2"> $100</td>
+  </tr>
+  <tr>
+  <td style="text-align: right; vertical-align: middle;">Pine  </td>
+  <td style="text-align: left;" colspan="2"> $50</td>
+  </tr>
+  <tr>
+  <td style="text-align: right; vertical-align: middle;">Rosewood  </td>
+  <td style="text-align: left;" colspan="2"> $300</td>
+  </tr>
+  <tr>
+  <td style="text-align: right; vertical-align: middle;">Veneer  </td>
+  <td style="text-align: left;" colspan="2"> $125</td>
+  </tr>
+  </tbody>
+  </table>
+  <p> </p>
+  <table class="ic-Table" style="margin-left: auto; margin-right: auto;">
+  <tbody>
+  <tr>
+  <td style="text-align: center; vertical-align: middle; background-color: #326ba9;" rowspan="2"><span style="color: #ffffff;"><strong>Rush Order<br />Additional<br />Costs</strong></span></td>
+  <th style="text-align: center; vertical-align: middle; color: #fff; background-color: #326ba9;" colspan="3">Size of Desk (in<sup>2)</sup></th>
+  </tr>
+  <tr>
+  <th style="text-align: center; vertical-align: middle;">less than 1000</th>
+  <th style="text-align: center; vertical-align: middle;">1000 to 2000</th>
+  <th style="text-align: center; vertical-align: middle;"> greater than 2000</th>
+  </tr>
+  <tr>
+  <th style="text-align: center; vertical-align: middle;">3 Day</th>
+  <td style="text-align: center; vertical-align: middle;">$ 60</td>
+  <td style="text-align: center; vertical-align: middle;">$ 70</td>
+  <td style="text-align: center; vertical-align: middle;">$ 80</td>
+  </tr>
+  <tr>
+  <th style="text-align: center; vertical-align: middle;">5 Day</th>
+  <td style="text-align: center; vertical-align: middle;">$ 40</td>
+  <td style="text-align: center; vertical-align: middle;">$ 50</td>
+  <td style="text-align: center; vertical-align: middle;">$ 60</td>
+  </tr>
+  <tr>
+  <th style="text-align: center; vertical-align: middle;">7 Day</th>
+  <td style="text-align: center; vertical-align: middle;">$ 30</td>
+  <td style="text-align: center; vertical-align: middle;">$ 35</td>
+  <td style="text-align: center; vertical-align: middle;">$ 40</td>
+  </tr>
+  </tbody>
+  </table>
+  </div>

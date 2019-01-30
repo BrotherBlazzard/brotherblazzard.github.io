@@ -1,0 +1,64 @@
+<div class="byui cit365">
+  <h2>Instructions</h2>
+  <ol>
+    <li>Review the design documents and conversations from this week's Developer Forum and discussion board.</li>
+    <li>Create a new desktop project in Visual Studio.</li>
+    <li>Name the project MegaDesk or something similar. We will be building upon this version for next week and the
+      week after. You will need to create and maintain this project as a separate repo.</li>
+    <li>Build your application framework with default support files and an initial form named Form1.cs.</li>
+    <li>Rename Form1.cs to <strong>MainMenu.cs</strong> and build a main menu interface as shown in the <a title="MegaDesk Project Description"
+        href="https://byui.instructure.com/courses/18600/pages/megadesk-project-description" data-api-endpoint="https://byui.instructure.com/api/v1/courses/18600/pages/megadesk-project-description"
+        data-api-returntype="Page">MegaDesk Project Description.</a></li>
+    <li>Add the following objects:
+      <ol>
+        <li><strong>AddQuote.cs</strong> (Windows Form): This form provides the user input interface.</li>
+        <li><strong>DisplayQuote.cs</strong> (Windows Form): This form view displays the current quote information
+          after a successful quote add.</li>
+        <li><strong>ViewAllQuotes.cs</strong> (Windows Form): This form will display all the quotes by reading from the
+          a text file where quotes are stored.</li>
+        <li><strong>SearchQuotes.cs</strong> (Windows Form): This user interface form allows the user to pick a
+          material type from a combo box and displays all quotes with that material.</li>
+        <li><strong>Desk.cs</strong> (Class): This class will define the attributes of the desk object with width,
+          depth, number of drawers, and the surface material may contain validation of those attribute values.</li>
+        <li><strong>DeskQuote.cs</strong> (Class): This class will define the attributes of a quote including Desk,
+          rush days, customer name, and quote date. This class will also hold the logic in determining the line item
+          cost.</li>
+      </ol>
+    </li>
+    <li>Create a 3 min (or less) video demonstrating the navigation and validation of the inputs. You do NOT need to
+      show code unless there is something specific you want to demonstrate. Narrate your video and demonstrate that
+      your application meets the requirements.</li>
+    <li>Sync your finished application to a new properly labeled GitHub repository. Make sure it is complete from the
+      project root and includes the .sln solution file.</li>
+  </ol>
+  <hr />
+  <h2>Application Requirements</h2>
+  <p style="border:1px solid #E7F4FF;
+  background-color:#C9DDFA; margin: 7px; padding: 7px;">You are not completing the entire MegaDesk application this week. Rather, you are just
+    getting started by planning and designing the user interface (forms) and setting up the classes with the
+    appropriate logic. In this version it is OK to use hard coded 'magic numbers' such as base price, minimum width,
+    rush order days, and values for combo boxes, etc. The next version will add additional development specifications
+    and requirements to meet the remaining functional specifications from the design.</p>
+  <ol>
+    <li>Your application must have the form navigation completed, allowing the user to navigate from the main menu to
+      each form and back again, and the user should be able to exit the application.</li>
+    <li>Validate the <strong>width</strong> input with a <a href="https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.validating?view=netframework-4.7"
+        target="_blank" rel="noopener">Validating event</a>&nbsp;that checks for an integer input and that checks for
+      valid minimum and maximum values. The application should provide visual clues for the user to identify where the
+      error is located.</li>
+    <li>Validate the <strong>height</strong> input using a <em>KeyPress</em> or related event that checks for valid
+      integer input using a compound statement and the <em>char</em> data type with IsControl and IsDigit methods.</li>
+    <li>Be sure to consider proximity, alignment, contrast, and padding in your input and output interface designs. <a
+        href="https://www.lynda.com/Illustrator-tutorials/Understanding-PARC-system/145210/170193-4.html" target="_blank"
+        rel="noopener">PARC Principles</a>&nbsp;review.</li>
+  </ol>
+</div>
+<hr />
+<h3>Notes</h3>
+<h4>Form Navigation</h4>
+<div class="language-csharp">private void addQuoteFormButton_Click(object sender, EventArgs e) { <br />&nbsp;
+  &nbsp;AddQuote addQuoteForm = new AddQuote();<br />&nbsp; &nbsp;addQuoteForm.Tag = this;<br />&nbsp;
+  &nbsp;addNewQuoteForm.Show(this);<br />&nbsp; &nbsp;Hide();<br />}<br /><br /><em>and then from AddQuote form this
+    example for a cancel button but the concept can be used once a valid quote has been added</em><br /><br />private
+  void cancelQuoteButton(object sender, EventArgs e) {<br />&nbsp; &nbsp;var mainMenu = (MainMenu)Tag;<br />&nbsp;
+  &nbsp;mainMenu.Show();<br />&nbsp; &nbsp;Close();<br />}</div>
