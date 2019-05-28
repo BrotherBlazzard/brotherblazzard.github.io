@@ -5,53 +5,63 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Brother Blazzard &lozf; BYU-Idaho &lozf; CIT &amp; WDD</title>
-  <meta name="description" content="This page serves as an instruction and administrative supplement site for Brother Blazzard at Brigham Young University - Idaho in Computer Information Technology and Web Design and Development.">
+  <meta name="description"
+    content="This page serves as an instruction and administrative supplement site for Brother Blazzard at Brigham Young University - Idaho in Computer Information Technology and Web Design and Development.">
   <link rel="apple-touch-icon" href="images/icon.png">
-  <link href="https://fonts.googleapis.com/css?family=Roboto%7CMontserrat" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montaga%7CMontserrat" rel="stylesheet">
   <link rel="stylesheet" href="css/style-bbzz.css">
 </head>
 
 <body>
   <header>
     <h1>Course Supplement Site</h1>
-    <h2>Brother Jason Blazzard</h2>
-    <nav class="head-nav">
-      <ul>
-        <li>
-          <a href="#" onclick="toggleMainMenu">&#10010; Menu</a>
-        </li>
-        <li>
-          <a href="cit111" title="Introduction to Databases">&#10070; CIT 111</a>
-        </li>
-        <li>
-          <a href="cit160" title="Introduction to Programming">&#10070; CIT 160</a>
-        </li>
-        <li>
-          <a href="cit230" title="Web Frontend Development">&#10070; CIT 230</a>
-        </li>
-        <li>
-          <a href="cit260" title="Object Oriented Programming with Java">&#10070; CIT 260</a>
-        </li>
-        <li>
-          <a href="cit336" title="Web Backend Development">&#10070; CIT 336</a>
-        </li>
-        <li>
-          <a href="cit365" title=".NET Software Development">&#10070; CIT 365</a>
-        </li>
-      </ul>
-    </nav>
+    <h2 class="tight">Brother Jason Blazzard</h2>
+    
+    <div class="stamp">
+      <span id="currentDate"></span>
+    </div>
   </header>
-
+  <nav>
+    <ul class="head-nav">
+      <li>
+        <a href="#" onclick="toggleMenu()">&#10050; Menu</a>
+      </li>
+      <li>
+        <a href="cit111/" title="Introduction to Databases">&#10070; CIT 111</a>
+      </li>
+      <li>
+        <a href="cit160/" title="Introduction to Programming">&#10070; CIT 160</a>
+      </li>
+      <li>
+        <a href="cit230/" title="Web Frontend Development">&#10070; CIT 230</a>
+      </li>
+      <li>
+        <a href="cit260/" title="Object Oriented Programming with Java">&#10070; CIT 260</a>
+      </li>
+      <li>
+        <a href="cit336/" title="Web Backend Development">&#10070; CIT 336</a>
+      </li>
+      <li>
+        <a href="cit365/" title=".NET Software Development">&#10070; CIT 365</a>
+      </li>
+    </ul>
+  </nav>
   <main>
     <section>
-      <h2>Sandbox</h2>
+      <h2>Sandboxes</h2>
       <ul>
         <li>
-          <a href="https://codepen.io/blazzard-jason/">codepen.io</a>
+          <a href="https://codepen.io/blazzard-jason/" target="_blank">codepen.io</a>
         </li>
         <li>
-          <a href="https://jsfiddle.net/user/blazzard/fiddles/">jsfiddle.net</a>
+          <a href="https://jsfiddle.net/user/blazzard/fiddles/" target="_blank">jsfiddle.net</a>
         </li>
+        <li>
+          <a href="https://javascript30.com/" target="_blank">#JavaScript30</a> - Vanilla JS Coding - Wes Bos</li>
+        <li>
+          <a href="https://cssgrid.io/" target="_blank">CSS Grid</a> - Learn CSS Grid - Wes Bos</li>
       </ul>
     </section>
     <section>
@@ -59,62 +69,50 @@
       <h3>HTML</h3>
       <ul>
         <li>
-          <a href="https://makeawebsitehub.com/the-html-5-mega-cheat-sheet/">HTML 5 Cheat Sheet</a>
+          <a href="https://makeawebsitehub.com/the-html-5-mega-cheat-sheet/" target="_blank">HTML 5 Cheat Sheet</a>
         </li>
         <li>
-          <a href="https://htmlreference.io/">Visual guide to HTML</a>
+          <a href="https://htmlreference.io/" target="_blank">Visual guide to HTML</a>
         </li>
       </ul>
       <h3>CSS</h3>
       <ul>
         <li>
-          <a href="https://cssreference.io/">Visual guide to CSS</a>
+          <a href="https://cssreference.io/" target="_blank">Visual guide to CSS</a>
         </li>
         <li>
-          <a href="https://css-tricks.com/">CSS-Tricks</a>
+          <a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a>
         </li>
 
       </ul>
       <h3>JavaScript</h3>
       <ul>
         <li>
-          <a href="http://keycode.info/">Get JS Keycode</a>
+          <a href="http://keycode.info/" target="_blank">Get JS Keycode</a>
         </li>
       </ul>
       <h3>C#</h3>
       <ul>
         <li>
-          <a href="https://www.c-sharpcorner.com/">C#Corner</a>
+          <a href="https://www.c-sharpcorner.com/" target="_blank">C#Corner</a>
         </li>
         <li>
-          <a href="https://csharppad.com/">C Sharp Pad - Run C# Online</a>
+          <a href="https://csharppad.com/" target="_blank">C Sharp Pad - Run C# Online</a>
         </li>
       </ul>
 
     </section>
-    <section>
-      <h2>Current Dev Courses</h2>
-      <ul>
-        <li>
-          <a href="https://javascript30.com/">#JavaScript30</a> - Vanilla JS Coding - Web Bos</li>
-        <li>
-          <a href="https://cssgrid.io/">CSS Grid.</a> - Learn CSS Grid - Web Bos</li>
 
-      </ul>
-    </section>
   </main>
-  <aside>
 
-  </aside>
   <footer>
-    <p>AY 2018-2019 BYU-Idaho | Jason B. Blazzard |
-      <a href="http://www.byui.edu/online" target="_blank" title="BYU-Idaho Online Learning">BYU-Idaho Online Learning</a> |
+    <p>AY 2019-2020 BYU-Idaho | Jason B. Blazzard |
+      <a href="http://www.byui.edu/online" target="_blank" title="BYU-Idaho Online Learning">BYU-Idaho Online
+        Learning</a> |
       <a href="http://www.byui.edu/catalog" target="_blank" title="BYU-Idaho Catalog">Catalog</a>
     </p>
     <p class="footbar">
-      <small>Copyright &copy; 1994 • All Rights Reserved •
-        <span id="currentDate"></span>
-      </small>
+      <small>Copyright &copy; 1994 • All Rights Reserved</small>
     </p>
 
 
