@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery Examples</title>
+
+    <link href="../css/style.css" rel="stylesheet" />
+
+    <script src="../js/jquery-3.1.1.min.js"></script> <!-- jQuery Library Reference -->
+    <script src="../js/animations.js"></script> <!-- local reference to jQuery code -->
+    <script>
+        function myFunction() {            
+            document.getElementById("myOutput").innerHTML = document.getElementById("startDate").value;
+        }
+    </script>
+</head>
+<body>
+    <h1>Examples</h1>
+    <h2>Vanilla JS</h2>
+
+    <fieldset>
+      <input type="date" id="startDate"><br>
+      <button onclick="myFunction()">Some Basic JavaScript - event driven script</button><br>
+      <div id="myOutput">Place selected date into this innerHTML of a div named myOutput</div>
+    </fieldset>
+    <section>
+      <h2>fadeIn() Method</h2>
+        <div class="subsection"><button id="thebutton">Evoke Event</button></div>
+        <div id="div1" class="block">1</div>
+        <div id="div2" class="block">2</div>
+        <div id="div3" class="block">3</div>
+    </section>
+    <section>
+        <h2>Chaining using slide and animate</h2>
+        <div class="subsection"><button id="slideani">Evoke Event</button></div>
+        <div id="div4" class="block">4</div>
+        <div id="div5" class="block">5</div>
+        <div id="div6" class="block">6</div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+	<title>BYU-Idaho</title>
+	<link rel="stylesheet" href="Web%20Files/css/styles.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="Web%20Files/js/online.js"></script>
+	<script src="https://content.byui.edu/file/e95ddf18-8efc-44c0-94ca-eee4b359aab9/1/onlineData.js"></script>
+	<script src="Web%20Files/js/course.js"></script>
+</head>
+<body>
+<div id="main">
+<div id="header">
+<h1>Lesson 07 - Working with Database Data</h1>
+<h5>Module 2: ASP.NET Web Pages with Razor</h5>
+</div>
+<div id="article">
+<h2>Overview</h2>
+<p>We continue our work with ASP.NET Web Pages by working with data which is the foundation of most web applications and the dynamic nature of the content of those sites. During this lesson we review the basic structure of databases, build a database using SQL Server Compact Edition, and build an application that views, adds, edits, and deletes records through a form interface. The lesson is built around an online tutorial that provides an overview of all of these common data activities and includes work on connectivity, validation, rich controls (helpers), and data manipulation through SQL commands.</p>
+
+    <h2>Objectives</h2>
+        <ul>
+            <li>Leverage database knowledge in the ASP.NET Web Pages environment</li>
+            <li>Run SQL commands in ASP.NET Web Pages</li>
+            <li>Display, add, update, and delete data from a database</li>
+            <li>Customize controls and helpers to leverage development cycles</li>
+        </ul>
+
+    <h2>Activities</h2>
+        <div class="tab-group">
+            <div class="tab-group">
+                <div class="tab">
+                    <input id="tab-one" type="checkbox" />
+                    <label class="discussion" for="tab-one">Developer Forum</label>
+                    <div class="tab-content">
+                        <h4>Instructions</h4>
+                        <p>The developer forum discussion board provides an opportunity for students to asynchronously post questions and answers related to lesson concepts and activities. Participation is required and is typically specified as part of the individual programming exercises and team development projects. The postings are monitored and supported by the instructor each day.</p>
+                        <p class="success">Assignment Link: Developer Forum</p>
+                    </div>
+                </div>
+                <div class="tab">
+                    <input id="tab-two" type="checkbox" />
+                    <label class="reading" for="tab-two">Readings / Resources</label>
+                    <div class="tab-content">
+                        <h4>Instructions</h4>
+                        <ul>
+                            <li>Required Reading: asp.net - <a href="http://www.asp.net/web-pages/overview/getting-started/introducing-aspnet-web-pages-2/displaying-data" target="_blank">Displaying Data</a></li>
+                            <li>Required Reading: asp.net - <a href="http://www.asp.net/web-pages/overview/getting-started/introducing-aspnet-web-pages-2/form-basics" target="_blank">HTML Form Basics</a></li>
+                            <li>
+                                Required Reading: asp.net - <a href="http://www.asp.net/web-pages/overview/getting-started/introducing-aspnet-web-pages-2/entering-data" target="_blank">
+                                    Entering Database Data by Using Forms
+                                </a>
+                            </li>
+                            <li>Required Reading: asp.net - <a href="http://www.asp.net/web-pages/overview/getting-started/introducing-aspnet-web-pages-2/updating-data" target="_blank">Updating Database Data</a></li>
+                            <li>Required Reading: asp.net - <a href="http://www.asp.net/web-pages/overview/getting-started/introducing-aspnet-web-pages-2/deleting-data" target="_blank">Deleting Database Data</a></li>
+                        </ul>
+                        <h4>Supportive Resources</h4>
+                        <ul>
+                            <li>w3schools.com - <a href="http://www.w3schools.com/aspnet/webpages_database.asp" target="_blank">WebPages Databases</a></li>
+                            <li>w3schools.com -<a href="http://www.w3schools.com/aspnet/webpages_webgrid.asp" target="_blank"> WebPages Web Grid Helper</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tab">
+                    <input id="tab-three" type="checkbox" />
+                    <label class="quiz" for="tab-three">Quiz</label>
+                    <div class="tab-content">
+                        <h4>Instructions</h4>
+                        <p>The purpose of quizzes is to assess your comprehension and fluency with the assigned subject matter presented in the required readings. The quiz is open text and internet, however, the quiz is timed for a balanced assessment. The majority of questions are fill-in-the-blank and short answer type questions and the amount of time provided is based upon the number, difficulty and type of questions. Please note that only one attempt is allowed.</p>
+                        <div class="success">Assignment Link: Quiz</div>
+                    </div>
+                </div>
+
+                <div class="tab">
+                    <input id="tab-four" type="checkbox" />
+                    <label class="peer" for="tab-four">Virtual Lab</label>
+                    <div class="tab-content">
+                        <img class="right" src="Course Files/Images/36481_all_24-02-WagonRiver.jpg" alt="Serve One Another" title="Serve One Another" width="200" height="150" />
+                        <h4>Instructions</h4>
+                        <p>
+                            The live, virtual lab is an opportunity to interact and discuss professional development topics with your peers and instructor. The lesson's content will be the catalyst for the conversation. You may elect to attend this required virtual lab class in one of two ways for credit:
+
+                            <ol>
+                                <li>attend live at the given class site (see virtual lab information), or</li>
+                                <li>watch the recording after the class has taken place.</li>
+                            </ol>
+                        </p>
+                        <div class="success">Assignment Link: <a href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou=17756&amp;type=quiz&amp;rcode=byui_produ-133844" target="_self">Virtual Lab Reflection</a></div>
+                    </div>
+                </div>
+
+                <div class="tab">
+                    <input id="tab-five" type="checkbox" />
+                    <label class="exercise" for="tab-five">Programming Exercise - My Scripture Journal</label>
+                    <div class="tab-content">
+                        <h4>Instructions</h4>
+                        
+                        <p>
+                        <strong><em>This exercise is a continuation from the previous lesson.</em></strong></p>
+                        <p>
+                        Using the concepts presented from the tutorial in the required readings, finalize the build of your <strong>My Scripture Journal</strong> ASP.NET Web Pages application by providing capabilities of standard database operations. These include the ability to add new scriptures, edit exisiting scripture records, delete scriptures from the list, search by book or keyword in the notes field, and, of course, view the favorite scriptures list. The list should be sortable by book and date added. In addition, use pagination with the list showing a maximum of five (5) scripture records at a time.</p>
+
+                        <p>Be sure to post questions, respond to posts, and up-vote posts in this lesson's Developer Forum.</p>
+                        <p class="success">Assignment Link: Developer Forum</p>
+
+                        <p class="success">Assignment Link: Individual Programming Exercise - My Scripture Journal</p>
+                    </div>
+                </div>
+
+                <div class="tab">
+                    <input id="tab-six" type="checkbox" />
+                    <label class="peer" for="tab-six">Teach</label>
+                    <div class="tab-content">
+                        <h4>Instructions</h4>
+                        <p>Continue to teach an outside of the class individual or small group by teaching the concepts, principles, and/or applications that you have learned from this lesson. Focus on concepts that you can correlate with other coursework within your chosen major and degree plan or to practical, work-based experiences. You will spend ~10-15 minutes teaching. You will be asked to report on the individual or group you taught, the length of time, and the concept(s) that you covered. In addition, you will report on any questions or feedback from the individual or group that you taught and reflect on insights that came to you from this teaching opportunity.</p>
+
+                        <div class="gospel">"not esteeming himself above his hearers, for the preacher was no better than the hearer, neither was the teacher any better than the learner; and thus they were all equal, and they did all labor, every man according to his strength." <br /><a href="https://www.lds.org/scriptures/bofm/alma/1.26?lang=eng#25" target="_blank">Alma 1:26</a></div>
+                        <div class="success">Assignment Link: <a href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou=17756&amp;type=quiz&amp;rcode=byui_produ-133885" target="_self">Teaching Reflection</a></div>
+                    </div>
+                </div>
+            </div>
+</div>
+</div>
+</body>
+</html>

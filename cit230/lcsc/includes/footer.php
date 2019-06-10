@@ -1,0 +1,1 @@
+Copyright &copy; <?php echo date("Y"); ?> .:|blazzard|:. &nbsp; All Rights Reserved | <?php echo date("l \, jS \of F Y"); ?>

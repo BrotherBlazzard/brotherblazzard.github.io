@@ -1,0 +1,250 @@
+﻿body {
+    background-color: #0DC6D8;
+    font-family:'NaumanRegular', sans-serif;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+
+    font-weight:bold;
+}
+
+h1 {
+
+}
+h2 {
+    
+}
+h3{
+    
+}
+
+#wrapper {
+    width: 900px;
+    margin: 0 auto;
+    background-image: url('../images/navbar.jpg');
+    background-repeat: no-repeat;
+}
+
+header{
+    width: 100%;
+}
+
+.partNav {
+    display: block;
+    width:100%;
+}
+
+.fullNav {
+    display:none;
+}
+
+.main{
+    width: 50%;
+    float: left;
+}
+
+footer{
+    width:100%;
+    clear: both;
+    border-top: 1px solid #fff;
+    padding-top:3px;
+}
+
+form{
+    position:relative;
+    left:400px;
+    bottom:-80px;
+}
+#copyright{
+    position:relative;
+    left:-60px;
+    bottom:250px;
+    z-index:-1;
+}
+aside{
+    width:20em;
+    position:relative;
+    left:90px;
+    top:-40px;
+    z-index:-1;
+}
+
+
+
+#productsfooter{
+    position: relative;
+    bottom:-200px;
+}
+
+#contactform{
+    position:relative;
+    z-index:-1;
+    bottom:150px;
+    left:95px;
+ 
+}
+
+#contactp{
+    position:relative;
+    top:-600px;
+    width:20em;
+}
+
+#dp{
+    height:75%;
+    width:65%;
+    position:relative;
+    left: 525px;
+    margin:150px 10px 150px 10px;
+    z-index: -1;
+}
+
+#dpp{
+    top:-500px;
+    position:relative;
+}
+
+#features{
+    position:relative;
+    top:-35px;
+    margin: 0px 0px 450px 0px;
+}
+
+#pricing{
+    position:relative;
+    top:-35px;
+    margin: 0px 0px 450px 0px; 
+}
+
+#benefits{
+    position:relative;
+    top:-130px;
+    margin: 0px 0px 450px 0px;
+}
+
+#benefits1{
+    width:45%;
+    position:relative;
+    top:3em;
+    line-height:1em;
+}
+
+
+#seo{
+    position:relative;
+    top:-80px;
+    margin: 0px 0px 450px 0px; 
+}
+
+#aboutusp{
+     position:relative;
+    top:-265px;
+    margin: 0px 0px 450px 0px; 
+}
+
+#kb{
+    position:relative;
+  top:150px;
+  right:-90px;
+  
+}
+
+h5>a{
+    padding:0px 0px 0px 0px;
+    line-height:0em;
+    margin:0px 0px 0px 0px;
+}
+
+figure>img{
+    width:250px;
+    height:250px;
+}
+
+
+#pf1{
+    width:80%;
+    position:relative;
+    left: 65px;
+    
+}
+
+#pf2{
+     width:80%;
+    position:relative;
+    left: 65px;
+    
+}
+
+#pf3{
+   width:80%;
+    position:relative;
+    left: 65px; 
+}
+#portfolio{
+     position:relative;
+    top:-1330px;
+    margin: 0px 0px 450px 0px; 
+}
+
+#tp{
+    position:relative;
+    top:100px;
+}
+
+figure{
+        position:relative;
+        left:25px;
+        top:100px;
+    }
+
+figcaption{
+    text-align:left;
+    position:relative;
+    left:30px;
+    font-family:"NaumanRegular";
+    margin:0em 0em .5em 0em;
+}
+
+#productsp{
+    position:relative;
+    top:-200px;
+    margin: 0px 0px 0px 0px; 
+}    
+
+#sales{
+    height:50%;
+    padding:-50px -50px -50px -50px;
+}
+
+/* Mobile Friendly Code **********************************************/
+@media screen and (min-width:360px) and (max-width:480px) {
+    body{
+        /*background-color:aquamarine;*/
+    }
+    
+    #wrapper {
+        width:100%;
+        background-image:none;
+    }
+ 
+    .partNav {
+        display: none;
+    }
+
+    .fullNav {
+        display: block;
+        width: 45%;
+        float:left;
+    }
+
+    .main {
+        float: left;
+        width:45%;
+        font-size: smaller;
+        border: 1px solid #aaa;
+        background-color:#eee;
+        padding:3px;
+    }
+
+}

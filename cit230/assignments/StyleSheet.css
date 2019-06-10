@@ -1,0 +1,105 @@
+﻿body {
+    font-family: Ubuntu, Consolas, sans-serif;
+    color: #555;
+    max-width: 1024px;
+}
+
+header {
+    text-align:center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3b5998;
+}
+
+nav li {
+    float: left;
+}
+
+nav .menu-right {
+    float:right;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+nav li a:hover:not(.active) {
+    background-color: #8b9dc3;
+    color:#000;
+}
+
+main {
+    clear: both;
+    margin: 3px auto 3px;
+    width: 97%;
+    display:table;
+}
+
+main::after {
+    background-image: url(https://pbs.twimg.com/profile_images/513512311328227330/8zRZbJL0_400x400.png);
+    opacity:.4;
+}
+
+footer {
+    clear:both;
+    background-color: #3b5998;
+    color: #fff;
+    padding:3px;
+    text-align: center;
+}
+
+.myCode {
+    border: 1px solid #ddd;
+    padding:3px;
+    background-color: #fff;
+    text-align:left;
+    font-size: .75em;
+    font-family: Consolas;
+}
+
+.page-container {
+    margin: 0 auto;
+    width: 960px;
+}
+
+.column1, .column2, .column3 {
+    float: left;
+    display: block;
+    display:table-cell;
+}
+
+.column1, .column3 {
+    width: 25%;
+    text-align: center;
+}
+
+.column1 {
+    background-color: #eee;
+    padding: 3px;
+    margin-right: 11px;
+}
+
+.column2 {
+    width: 45%;
+    margin-right: 11px;
+}
+
+.column3 {
+    border: 1px solid #ddd;
+    background: radial-gradient(circle, #dfe3ee, white);
+    padding:5px;
+    margin-top:25px;
+}
+
+.active {
+    background-color: #333;
+}

@@ -1,0 +1,95 @@
+﻿body {
+    font-family: Ubuntu, Consolas, sans-serif;
+    color: #555;
+}
+
+header {
+    text-align:center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3b5998;
+}
+
+nav li {
+    float: left;
+}
+
+nav .menu-right {
+    float:right;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+nav li a:hover:not(.active) {
+    background-color: #8b9dc3;
+    color:#000;
+}
+
+main {
+    clear: both;
+    margin: 3px auto 3px;
+    width: 97%;
+    display:table;
+}
+
+footer {
+    clear:both;
+    background-color: #3b5998;
+    color: #fff;
+    padding:3px;
+    text-align: center;
+}
+/* Class Selectors *************************************/
+
+.page-container {
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+.column1, .column2, .column3 {
+    float: left;
+    display: table-cell;
+    box-sizing: border-box;
+}
+
+.column1, .column3 {
+    width: 25%;
+    text-align: center;
+}
+
+.column1 {
+    background-color: #eee;
+    padding: 3px;
+}
+
+.column2 {
+    width: 50%;
+    padding: 10px;
+}
+
+.column3 {
+    border: 1px solid #ddd;
+    background: radial-gradient(circle, #dfe3ee, white);
+    padding:5px;
+    margin-top:30px;
+}
+
+.myCode {
+    border: 1px solid #ddd;
+    padding: 3px;
+    background-color: #fff;
+    text-align: left;
+    font-size: .80em;
+    font-family: Consolas;
+}

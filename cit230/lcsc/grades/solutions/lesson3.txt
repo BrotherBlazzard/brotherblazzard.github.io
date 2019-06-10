@@ -1,0 +1,11 @@
+﻿Line Numbers represent location on original CSS file lesson03css.css
+1. #998E70 - Line 2
+2. Verdana - Line 5
+3. ID Selector (assigned to a div) - Line 28 #
+4. #A80D0E - Line 10
+5. linked text is underlined (text size does not change) - Line 10
+6. em is a unit of measurement that is a relative size of an m in the given font-family - general
+7. since it is not specified it will be the default size for H6 
+8. area between border and content - general
+9. in case the first one listed is not supported by the user's agent
+10. 3px - Line 15

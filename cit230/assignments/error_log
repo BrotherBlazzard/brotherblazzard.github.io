@@ -1,0 +1,3 @@
+[20-Nov-2016 14:31:36 America/Denver] PHP Notice:  Undefined index: searchstring in /home2/jasonbl7/public_html/cit230/assignments/search.php on line 31
+[20-Nov-2016 14:32:08 America/Denver] PHP Notice:  Undefined index: searchstring in /home2/jasonbl7/public_html/cit230/assignments/search.php on line 31
+[20-Nov-2016 14:32:38 America/Denver] PHP Fatal error:  Call to undefined function file_get_html() in /home2/jasonbl7/public_html/cit230/assignments/search.php on line 46

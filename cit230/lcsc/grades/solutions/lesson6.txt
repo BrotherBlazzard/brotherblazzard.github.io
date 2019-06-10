@@ -1,0 +1,41 @@
+﻿/* set the table's base font family, borders, and width */ 
+table 
+{ 
+font-family: Arial, sans-serif; 
+border-collapse: collapse; /*remove any padding between cells*/ 
+width: 380px; 
+} 
+
+
+/* the table header in the thead tag ONLY */ 
+thead th 
+{ 
+background-color: rgb(221,217,195); 
+border-top: solid 1px rgb(221,217,195); 
+border-left: solid 1px rgb(221,217,195); 
+border-right: solid 1px rgb(221,217,195); 
+border-bottom: solid 1px #333; /* sets the bottom border to a dark color */ 
+color: rgb(148,139,84); 
+font-size: 125%; /* the font size in the header is just slightly bigger */ 
+} 
+
+/* Center all cells in the body and give them the same border */ 
+tbody td, th 
+{ 
+text-align: center; 
+border: solid 1px #333; 
+padding: 0; 
+width: 25%; 
+} 
+
+/* The table headers will have bold white text and a different background color */ 
+tbody th 
+{ 
+font-weight: bold; 
+background-color: rgb(148,139,84); 
+color: rgb(255,255,255); 
+} 
+
+/* NOTE that there are NO classes or IDs defined in here, this is just a generic overwrite of the table's base style 
+If I wanted to have multiple tables on a page, I would add something similar to the following: 
+#tableData table { style goes in here }*/

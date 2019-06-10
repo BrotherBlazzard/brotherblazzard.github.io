@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="utf-8">
+   <title> CIT 230 - Front-end Web Development | Responsive Web Using Hamburger</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="RWD assignment solution example using hamburger menu.">
+   <link href="styles/normalize.css" type="text/css" rel="stylesheet">
+   <link href="styles/mainFix.css" type="text/css" rel="stylesheet">
+ </head>
+ <body>	
+   <div id="wrapper">
+     <header>
+	   <h1>CIT 230 - Web Frontend Dev</h1>		
+       <button class="hamburger" onclick="myFunction()">☰</button>
+       <nav>
+         <ul class="navigation">
+           <li><a href="#" title="Home">Home</a></li>
+           <li><a href="#" title="About">About</a></li>
+           <li><a href="#" title="Service">Service</a></li>
+           <li><a href="#" title="History">History</a></li>
+           <li><a href="#" title="Contact">Contact</a></li>
+         </ul>
+       </nav>				
+       <div id="banner">
+         <img src="images/templevisit.jpg" alt="banner" width="960" height="612">
+       </div>				
+     </header>	
+	
+     <main id="maincontent">
+	   <h1>Main section</h1>
+	   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+     </main>
+		
+     <aside>
+       <h1>Sub-section</h1>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+     </aside>
+	 <footer>
+       |&loz;| Red Chicken Run Road |&loz;| 123 E Main St  Pantel, AK  99349
+     </footer>
+   </div>
+   <script>
+     function myFunction() {
+       document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
+     }
+   </script>
+  
+ </body>
+</html>

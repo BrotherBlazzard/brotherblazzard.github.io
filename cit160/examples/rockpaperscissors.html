@@ -1,0 +1,46 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Rock Paper Scissors - Selection Lesson</title>
+	
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport">
+    <meta name="author" content="Blazzard">
+    <meta name="description" content="A js rock paper scissors game.">
+    <meta content="blazzard - zimplicity" property="og:title">
+    <meta content="website" property="og:type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/demos.css">
+    <script src="scripts/rockpaperscissors.js"></script>
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <h1><span class="green">.:</span><span class="brown">|</span><span class="green">:.</span> Rock Paper Scissors - Selection Structures</h1>
+            <small><a href="/">blazzard</a>  &nbsp;.:|:.&nbsp;  <a href="/cit160/">CIT 160</a> &nbsp;.:|:.&nbsp;  <a href="mathQuiz.html">Math Quiz</a></small>
+            <h2>&#9729;Rock &nbsp;&#9993;Paper &nbsp;&#9986;Scissors</h2>
+        </header>
+        <main>
+           
+            <div id="input"> 
+                    <select id="userChoice">
+                        <option disabled selected value="">Choose an option:</option>
+                        <option value="rock">&#9729; Rock</option>
+                        <option value="paper">&#9993; Paper</option>
+                        <option value="scissors">&#9986; Scissors</option>
+                    </select> &nbsp;&nbsp;&nbsp;
+                    <button onclick="playGame()">Submit</button>
+            </div>
+
+            <div id="output">
+                <img id="mainImage" src="/images/bluefaceHmm.png" width="128" height="128" alt="face icon" />
+            </div>
+
+        </main>
+        <footer>
+            <small>&copy;blazzard  .:|:.  CIT 160 - An Introduction to Programming using JavaScript .:|:.  BYU-Idaho</small>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+	<title>BYU-Idaho</title>
+	<link rel="stylesheet" href="Web%20Files/css/styles.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="Web%20Files/js/online.js"></script>
+	<script src="https://content.byui.edu/file/e95ddf18-8efc-44c0-94ca-eee4b359aab9/1/onlineData.js"></script>
+	<script src="Web%20Files/js/course.js"></script>
+</head>
+<body>
+ <div id="main">
+    <div id="header">
+        <h1>My Movies Tutorial using MS Visual Studio</h1>
+        <h5>Lesson 06 - ASP.NET Web Pages and Data</h5>
+    </div>
+    <div id="article">
+        <h2>Overview</h2>
+        <p>This tutorial shows you how to create a database in Visual Studio and how to display database data in a page when you use ASP.NET Web Pages (Razor). It assumes you have completed the series through Introduction to ASP.NET Web Pages Programming. Now that you have an understanding of the basics of ASP.NET Web Pages and the Razor syntax, you are ready to build a small application that will be used in the development exercise in this lesson and subsequent lessons. The application deals with a movie database where the user has the ability to view, add, edit, and delete information about their favorite movies.</p>
+        <h2>Adaptation</h2>
+        <p>The content of this tutorial is adapated from Tom MitzMacken's <em><a href="http://www.asp.net/web-pages/overview/getting-started/introducing-aspnet-web-pages-2/displaying-data">Introducing ASP.NET Web Pages - Displaying Data</a></em>. Throughout this tutorial there will be relevant references to concepts that are applicable regardless of the platform. The reason this tutorial was built was to support an example in the MS Visual Studio platform versus the MS WebMatrix interface.</p>
+        <h2>Tutorial</h2>
+        <h5>Outcome</h5>
+        <p>This particular tutorial builds a sortable, movie listing like this:</p>
+        <p><img src="Course Files/Images/MyMoviesComplete-1.png" /></p>
+        <h5>Brief Database Review</h5>
+        <p>Typically a database contains one or more tables of information, data that has been organized into rows and columns with headers. These tables represent entities within the application that we are developing. When there is more than one table in a database, those tables are normally related and follow rules to keep the data manageable. This tutorial contains a simple table of information that tracks movies, which can be the title of our table in the database. Initially our <em>movies</em> table will contain columns such as <em>title</em>, <em>genre</em>, and <em>year</em> (meaning year released) for each movie. Each movie record is a row in the database table. The columns or fields are the attributes that describe the movie records.</p>
+        <p>As part of the normalization of information in a database, each table or entity contains a <em>primary key</em> or unique value that is used to identify a single record or row in the table. Primary keys can be made up of one or more of the existing columns or they can be a developed column if none of the columns suffice as an appripriate unique attribute.</p>
+        <p>In dynamic web applications and sites the displayed content is driven form a database. The most common operations in a dynamic web applications are viewing, adding, editing, and deleting information.</p>
+        <div class="info">
+            <strong>Optional Additional Database Fundamentals Review</strong><br />
+            <a href="http://www.w3schools.com/sql/sql_syntax.asp">Databases and SQL Syntax</a></div>
+        <h5>Start </h5>
+
+    </div>
+ </div>
+</body>
+</html>

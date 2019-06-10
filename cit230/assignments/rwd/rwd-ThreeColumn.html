@@ -1,0 +1,59 @@
+﻿<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>CIT 230 - Three Column Responsive Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="styles/css.css">
+</head>
+<body>
+    <div id="pagewrap">
+        <header>
+            <img src="images/graybox.png" alt="Logo Placeholder" width="128" height="128">
+            <h1>Three Column Responsive Layout</h1>
+        </header>
+        <button class="hamb" onclick="myFunction()">☰</button>
+        <nav>
+            <ul class="topnav">
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="search"><a href="#about">Search</a></li>
+            </ul>
+        </nav>
+        <main>
+          <section id="content">
+            <h2>1st Content Area</h2>
+            <p>This page demonstrates a 3 column responsive layout, complete with responsive images.</p>
+          </section>
+
+          <section id="middle">
+            <h2>2nd Content Area</h2>
+            <img src="images/winterwoods.jpg" alt="Winter Woods in the Winter" width="290">
+          </section>
+
+          <aside id="sidebar">
+            <h2>3rd Content Area</h2>
+            <p>Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <p>Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+          </aside>
+        </main>
+        <footer>
+            <h4>Footer</h4>
+            <p>Footer text</p>
+        </footer>
+
+    </div>
+    <script>
+        function myFunction() {
+            document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+﻿<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>CIT 160 - Lesson 11 - Arrays</title>
+    <script type="text/javascript">
+    // This script provides a random array named testingArray to be used in the assigned problems.
+        var ARRAYSIZE = 50; // constant of max array size for this problem
+        var NUMBERLIMIT = 100; // constant of the actual range of values to be assigned randomly to the array.
+	    var testingArray = [0];  // global scope available to all functions - no need to pass
+
+    function createArray() {
+       var sizeOfTheArray = Math.floor((Math.random() * ARRAYSIZE + 1));   //random select an array size between 1 and 50 items
+       for (var i = 0; i < sizeOfTheArray; i++) {
+           var randomValue = Math.floor(Math.random() * NUMBERLIMIT + 1);
+		  testingArray[i] = randomValue;  // add the random value to the array at the current position i
+		  if (i != sizeOfTheArray - 1)
+		     document.getElementById("divTestArray").innerHTML += randomValue + ", ";  // display the added value through accumulation
+		  else
+		     document.getElementById("divTestArray").innerHTML += randomValue + "]"; // close out the displayed array
+       }
+	}
+
+	function getValue() {
+	   var randomIndex = Math.floor(Math.random() * testingArray.length);
+	   document.getElementById("displayRandomValue").value = "testingArray[" + randomIndex + "] = " + testingArray[randomIndex];
+	}
+
+	function ends() {
+	    // call addEnds function and send the global array
+        // output sum of ends
+
+	}
+
+	function middle() {
+	    // call getMiddle function and send the global array
+        // output the middle value of the array
+	}
+
+	function addEnds(list) {
+
+	}
+
+	function getMiddle(list) {
+
+	}
+
+	function clearArray() {
+		testingArray = [];
+		document.getElementById("divTestArray").innerHTML = "&nbsp;&nbsp;&nbsp; Generated Array: [";
+	}
+
+    </script>
+</head>
+
+<body>
+    <h1>CIT 160: Introduction to Programming</h1>
+    <hr>
+    <h2>W11 Assignment: Two Functions that use Arrays</h2>
+    <hr>
+    <ol>
+        <li>
+            <button type="button" onclick="createArray()">Create a Random Array</button>
+            <hr>
+            <div id="divTestArray">&nbsp;&nbsp;&nbsp; Generated Array: [</div>
+            <hr>
+        </li>
+        <li>
+            <button type="button" onclick="getValue()">Get One Value of the testingArray[]</button>
+            &nbsp;&nbsp;&nbsp; Random Value: <input type="text" readonly id="displayRandomValue">
+            <br><br>
+        </li>
+        <li>
+            <button type="button" onclick="ends()">Sum the Array Ends</button>
+            &nbsp;&nbsp;&nbsp; Sum: <input type="text" readonly id="sumOfEnds" size="3">
+            <br><br>
+        </li>
+        <li>
+            <button type="button" onclick="middle()">Get the Middle Value of the Array</button>
+            &nbsp;&nbsp;&nbsp; Middle Value: <input type="text" readonly id="middleValue" size="2">
+        </li>
+    </ol>
+    <hr>
+    <button type="button" onclick="clearArray()">Clear Array</button>
+</body>
+</html>

@@ -1,0 +1,83 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+}
+
+.pagewrapper {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+h1 {
+    padding-left: 1.2rem;
+}
+
+header, main, footer {
+    display: block;
+}
+
+
+nav ul {list-style: none;padding-left:0;overflow: hidden;background-color: #ddd;}
+  nav li {float: left;}
+    nav li a {display: block;padding: 10px;text-decoration: none;}
+    nav li a:hover {background-color: #000;color: #fff;}
+
+main {
+    display:table;
+    border: 1px dashed #bbb;
+    background-color:#eee;
+}
+
+h2 {
+    padding-left: 1.5rem;
+    display: table-caption;
+}
+div {font-size: .85em;}
+
+.col {
+    display: inline-block;
+    width: 100%;
+    padding: .5rem;
+}
+
+.content1 {background-color: #bbeedd;}
+.content2 {background-color: #aaccee;}
+.content3 {background-color: #ccaabb;}
+.content4 {background-color: #ffeedd;}
+.content5 img {
+    width: 200px;
+    height: auto;
+    text-align: center;
+}
+
+footer {
+    margin-top: 5px;
+    border-top: 1px solid #bbb;
+    padding: .5rem;
+    font-size: .8rem;
+    letter-spacing: .25rem;
+    clear: both;
+}
+
+.togetherforever {
+    display: inline-block;
+}
+
+/* RWD issues */
+
+@media screen and (min-width: 37.5em) {
+
+    .col {
+        margin: .25rem;
+        border: 1px solid #ddd;
+        width: 20%;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        min-height:200px;
+    }
+
+}

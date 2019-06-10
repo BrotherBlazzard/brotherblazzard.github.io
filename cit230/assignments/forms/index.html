@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>CIT 230: Front-end Web Design and Development - BYU-Idaho</title>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" /><!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="../../../css/site.css" rel="stylesheet" />
+    <style>
+        li, input {
+            margin-bottom: 1.5ex;
+        }
+
+        frameset {
+            border: 1px solid #bbb;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CIT 230 - HTML Forms</h1>
+    </header>
+    <main>
+        <section>
+            <form class="formclass" method="post" action="processForm.php">
+                <h2>HTML Form Elements</h2>
+                <button autofocus>button element</button>
+                <label for="namedElement">A label: <input type="text" placeholder="input type text" /></label>
+
+                <datalist id="browsers">
+                    <option value="Chrome">
+                    <option value="Firefox">
+                    <option value="Internet Explorer">
+                    <option value="Opera">
+                    <option value="Mosaic">
+                    <option value="Microsoft Edge">
+                </datalist>
+
+
+                <fieldset>
+                    <legend>Legend of Frameset</legend>
+                    <input type="radio" name="groupOne" /> Radio Button 1<br />
+                    <input type="radio" name="groupOne" /> Radio Button 2<br />
+                    <input type="radio" name="groupTwo" /> Radio Button 3
+                </fieldset>
+
+                <input type="checkbox" /> Checkbox<br />
+                Date Selector: <input type="date" /><br />
+                Color Selector: <input type="color"><br />
+                Password: <input type="password" /><br />
+                Range: <input type="range" /><br />
+                Number: <input type="number" /><br />
+                Hidden: <input type="hidden" /><br />
+                File Selector: <input type="file" /><br />
+                Week Selector: <input type="week" />
+            </form>
+        </section>
+        <section>
+            <details>
+                <summary>Some details</summary>
+                <p>More info about the details.</p>
+            </details>
+            <dialog open>
+                Greetings, one and all!
+            </dialog>
+            <!-- A <div> element with a context menu -->
+            <div contextmenu="popup-menu">
+                Right-click to see the adjusted context menu
+            </div>
+
+        
+        </section>
+    </main>
+
+    <footer>&copy;2016 | Jason Blazzard | CIT 230 Supplements</footer>
+
+</body>
+</html>

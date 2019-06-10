@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+	<title>BYU-Idaho</title>
+	<link rel="stylesheet" href="Web%20Files/css/styles.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="Web%20Files/js/online.js"></script>
+	<script src="https://content.byui.edu/file/e95ddf18-8efc-44c0-94ca-eee4b359aab9/1/onlineData.js"></script>
+	<script src="Web%20Files/js/course.js"></script>
+</head>
+<body>
+<div id="main">
+<div id="header">
+    <h1>Lesson 08 - Layout, UI, UX, and Helpers</h1>
+    <h5>Module 2: ASP.NET Web Pages with Razor</h5>
+</div>
+    <div id="article">
+        <h2>Overview</h2>
+        <p>In this lesson we continue to learn the ASP.NET Web Pages framework by working on user interaction through form processing, form validation, multimedia, and overall user experience concepts. In addition, we investigate a handful of the available helpers in ASP.NET. which are built-in or custom-made components that help simplify common web programming tasks such as the WebGrid for data display and the Chart Helper for charting images. The programming exercise in this lesson focuses on the module's team project which is due at the end of the next lesson.</p>
+        <h2>Objectives</h2>
+        <ul>
+            <li>Create pages with consistent layouts and themes using ASP.NET Web Pages tools</li>
+            <li>Process forms including validating user input</li>
+            <li>Customize site-wide behavior</li>
+            <li>Work with multimedia objects</li>
+            <li>Understand the rule of modularized 'Helper' libraries and use them in application development.</li>
+        </ul>
+        <h2>Activities</h2>
+        <div class="tab-group">
+            <div class="tab">
+                <input id="tab-one" type="checkbox" />
+                <label class="discussion" for="tab-one">Developer Forum</label>
+                <div class="tab-content">
+                    <h4>Instructions</h4>
+                    <p>The developer forum discussion board provides an opportunity for students to asynchronously post questions and answers related to lesson concepts and activities. Participation is required and is typically specified as part of the individual programming exercises and team development projects. The postings are monitored and supported by the instructor each day.</p>
+                    <p class="success">Assignment Link: Developer Forum</p>
+                </div>
+            </div>
+            <div class="tab">
+                <input id="tab-two" type="checkbox" />
+                <label class="reading" for="tab-two">Readings / Resources</label>
+                <div class="tab-content">
+                    <h4>Instructions</h4>
+                    <ul>
+                        <li>Required Reading: asp.net - <a href="http://www.asp.net/web-pages/overview/routing/creating-readable-urls-in-aspnet-web-pages-sites" target="_blank">"Routing - Creating Readable URLs"</a></li>
+                        <li>Required Reading: asp.net - <a href="http://www.asp.net/web-pages/overview/ui-layouts-and-themes/4-working-with-forms" target="_blank">"Working with Forms"</a></li>
+                        <li>Required Reading: asp.net - <a href="http://www.asp.net/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites" target="_blank">"Validating User Input in ASP.NET Web Pages Sites"</a></li>
+                        <li>Required Reading: asp.net - <a href="http://www.asp.net/web-pages/overview/ui-layouts-and-themes/3-creating-a-consistent-look" target="_blank">"Creating a Consistent Look"</a></li>
+                        <li>Required Reading: asp.net - <a href="http://www.asp.net/web-pages/overview/ui-layouts-and-themes/18-customizing-site-wide-behavior" target="_blank">"Customizing Site Behavior"</a></li>    
+                        <li>Required Reading: asp.net - <a href="http://www.asp.net/web-pages/overview/ui-layouts-and-themes/9-working-with-images" target="_blank">"Working with Images"</a></li>
+                        <li>Required Reading: asp.net - <a href="http://www.asp.net/web-pages/overview/ui-layouts-and-themes/10-working-with-video" target="_blank">"Working with Video"</a></li>
+                        <li>Required Reading: asp.net - <a href="http://www.asp.net/web-pages/overview/ui-layouts-and-themes/installing-helpers" target="_blank">"Installing Helpers"</a> * needs 2015 update</li>
+                        <li>Required Reading: asp.net - <a href="http://www.asp.net/web-pages/overview/ui-layouts-and-themes/displaying-maps-in-an-aspnet-web-pages-site" target="_blank">"Displaying Maps"</a></li>
+                        <li>Required Reading: asp.net - <a href="http://www.asp.net/web-pages/overview/data/7-displaying-data-in-a-chart" target="_blank">"Displaying Data in a Chart"</a></li>
+                    </ul>
+                    <h4>Supportive Resources</h4>
+                    <ul>
+                        <li>w3schools: <a href="http://www.w3schools.com/aspnet/webpages_layout.asp" target="_blank">Web Pages - Page Layout</a></li>
+                        <li>w3schools: <a href="http://www.w3schools.com/aspnet/webpages_forms.asp" target="_blank">Web Pages -Forms</a></li>
+                        <li>w3schools: <a href="http://www.w3schools.com/aspnet/webpages_helpers.asp" target="_blank">Web Pages - Helpers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab">
+                <input id="tab-three" type="checkbox" />
+                <label class="quiz" for="tab-three">Quiz</label>
+                <div class="tab-content">
+                    <h4>Instructions</h4>
+                    <p>The purpose of quizzes is to assess your comprehension and fluency with the assigned subject matter presented in the required readings. The quiz is open text and internet, however, the quiz is timed for a balanced assessment. The majority of questions are fill-in-the-blank and short answer type questions and the amount of time provided is based upon the number and type of questions. Please note that only one attempt is allowed.</p>
+                    <div class="success">Assignment Link: <a href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou=17756&amp;type=quiz&amp;rcode=byui_produ-157571" target="_self">Quiz</a></div>
+                </div>
+            </div>
+            <div class="tab">
+                <input id="tab-four" type="checkbox" />
+                <label class="peer" for="tab-four">Virtual Lab</label>
+                <div class="tab-content">
+                    <h4>Instructions</h4>
+                    <img class="icon" src="Course Files/Images/lightworld.png" alt="Reflective Worldwide Light" />
+                    <p>The live, virtual lab is an opportunity to interact and discuss professional development topics with your peers and instructor. The lesson's content will be the catalyst for the conversation. You may elect to attend this required virtual lab class in one of two ways for credit:</p>
+                    <ol>
+                        <li>attend live at the given class site (see virtual lab information), or</li>
+                        <li>watch the recording after the class has taken place.</li>
+                    </ol>
+                    <div class="success">Assignment Link: Virtual Lab Reflection</div>
+                </div>
+            </div>
+            <div class="tab">
+                <input id="tab-five" type="checkbox" />
+                <label class="exercise" for="tab-five">Team Programming Project - Mega Escritorio with <em>Navaja</em></label>
+                <div class="tab-content">
+                    <h4>Instructions</h4>
+                    <h5>Mega Escritorio in ASP.NET Web Pages using Razor</h5>                    
+                    <p>This is a team assignment. You will migrate the Mega Escritorio project from the last module into an ASP.NET Web Page application. This web application will have the same functional specifications as the original project. The developmental specifications will be 
+					discussed as a class through the remainder of the module in the developer forum and virtual office. The following activities due by <span style="color: #cf2a27;">Saturday</span>.</p>
+                    <ol>
+                        <li>Collaborate on the project as a team using email, online meetings and cloud-based, code collaboration.
+                        </li>
+                        <li>Participate in the Developer Forum individually by posting questions or replying to questions <strong>and</strong> up voting at least one posting or reply.</li>
+                        <li>Team project submission using the following assignment link.</li>
+                    </ol>
+                    <div class="success">Assignment Link: Developer Forum</div>
+                    <div class="success">Assignment Link: The team project is not due until the end of the next lesson</div>
+                </div>
+            </div>
+            <div class="tab">
+                <input id="tab-six" type="checkbox" />
+                <label class="peer" for="tab-six">Teach</label>
+                <div class="tab-content">
+                    <h4>Instructions</h4>
+                    <div class="gospel">"The Lord can do remarkable miracles with a person of ordinary ability who is humble, faithful, and diligent in serving the Lord and seeks to improve himself. This is because God is the ultimate source of power."<br />- James E. Faust, <a href="https://www.lds.org/general-conference/1995/10/acting-for-ourselves-and-not-being-acted-upon?lang=eng" target="_blank">"Acting for Ourselves and Not Being Acted Upon"</a>, (Oct. 1995)</div>
+                    <p>Remember that you will be asked to report on the individual or group you taught and the concept(s) that you covered. In addition, you will report on any questions or feedback from the individual or group that you taught and reflect on insights that came to you from this teaching opportunity.</p>
+                    <div class="success">Assignment Link: Teach Reflection</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

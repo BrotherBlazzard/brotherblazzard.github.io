@@ -1,0 +1,27 @@
+#wrapper {width: 96%;max-width: 920px;margin: auto;padding: 2%;} 
+	main {width: 60%;margin-right: 5%;float: left;}		
+	aside {width: 35%;float: right;}
+
+header h1 {height: 70px; float: left; display: block;}
+		
+header nav {float: right;margin-top: 40px;}
+	header nav li {display: inline;margin-left: 15px;}
+
+#jump {display: none;}
+    #jump li {background: #eee;}
+	
+#banner {float: left;margin-bottom: 15px;width: 100%;}
+	#banner img {width: 100%;}
+
+footer {
+    clear: both;
+    border-top: 1px solid #bbb;
+    padding-top: 7px;
+    font-weight: 700;
+    font-size: .80em;
+}
+
+@media screen and () {
+    
+    
+}

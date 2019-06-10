@@ -1,0 +1,27 @@
+﻿Lesson 1 Assingment Grading Notes and Solutions
+
+
+1. Your website will be scanned for the modification of this given file to include your name and email addres plus the appropriate hyperlink(s).
+
+2. nameInHeaders.html includes <h1> through <h6>
+    <h1>Your Name</h1>
+    <h2>Your Name</h2>
+    ...
+    <h6>Your Name</h6>
+
+3. Your website was scanned for your access session
+
+4. Your site must contain the citpt111 folder
+
+5. Your site must contain the lesson1 folder within the citpt111 folder
+
+6. Complete structure and navigation work.
+
+
+Email Submission
+
+1. Version check
+2. a. h2
+   b. reset.css and newstyle.css
+   c. alt, width, and height
+3. written - various articles ok - source checked

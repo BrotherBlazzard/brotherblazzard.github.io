@@ -1,0 +1,50 @@
+﻿<!doctype html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+    <title>CIT 230 - Wayfinding</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="styles/css.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="scripts/wayfind.js"></script>
+</head>
+<body>
+    <div id="pagewrap">
+        <header>
+            <img src="http://lorempixel.com/128/128/food" alt="Logo Placeholder" width="128" height="128">
+            <h1>Basic Wayfinding</h1>
+        </header>
+        <button class="hamb" onclick="myFunction()">☰</button>
+        <nav>
+            <ul class="topnav">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="news/">News</a></li>
+                <li><a href="products/">Products</a></li>
+                <li><a href="services/">Services</a></li>
+                <li><a href="contact/">Contact</a></li>
+                <li><a href="about/">About</a></li>
+                <li class="search"><a href="#">Search</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Welcome to the Home</h2>
+            <div class="breadcrumbs">► breadcrumbs </div>
+            <p>Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <p>Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+        </main>
+        <footer>
+            <h4>Footer</h4>
+            <p>Footer text</p>
+        </footer>
+
+    </div>
+    <script>
+        function myFunction() {
+            document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+        }
+    </script>
+</body>
+</html>

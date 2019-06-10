@@ -1,0 +1,96 @@
+* {
+    font-family: Vollkorn, Droid Sans, sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+body {
+    background-color: #DBD7D7;
+}
+
+p {
+    text-align: left;
+    font-size: 2em;
+    padding: :.5em;
+}
+
+h1, h2 {font-family: Tahoma, serif;}
+
+h1{
+    font-size: 1.7em;
+    text-align: center;
+    color: white;
+    background-color: #030B5E;
+    padding: .4em;
+    width: 100%;
+    height:40px;
+
+}
+
+h2{
+    clear: both;
+    color:#0B5E03;
+    font-size: 2em;
+    text-align: center;
+}
+
+nav ul {list-style-type: none;}
+nav li {
+    display: inline;
+    font-size: 1em;
+    color:white;
+    background-color: #73000A;
+    padding: 1em;
+    margin-left: .5em;
+}
+
+main img {
+    width: 100%;
+}
+
+div {    
+    padding: .5em;
+    margin: .5em auto;
+    width: 90%;
+    clear: both;
+    color: white;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: #030B5E;
+    padding: .5em;
+}
+
+#sun {
+    width: 100px;
+    height: auto;
+    float: left;
+}
+
+#city{
+    opacity: .3;
+    width: 100%;
+}
+
+.icon {
+    width: 100px;
+    padding: .5em;
+    margin: .5em;
+    float: right;
+}
+
+.summary, .precip {
+    background-color: #030B5E;
+    color:white;
+}
+
+.highlow, .wind {
+    background-color: darkgreen;
+}
+
+.precip{
+    background-color: #030B5E;
+}

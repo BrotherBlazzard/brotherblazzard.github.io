@@ -1,0 +1,125 @@
+﻿body {
+    font-family: 'Gloria Hallelujah', cursive;
+    background-color:#fff;
+    font-size: 16px;
+}
+
+.page-container {
+    position: relative;
+    margin: 10px auto;
+    max-width: 767px;
+}
+
+main {
+    padding:10px;
+}
+
+h1 {
+    text-shadow:2px 2px 1px #777;
+    margin:0 0 10px 5px;
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+    color: #009000;
+    margin:5px auto;
+    word-spacing: 10px;
+    text-align:center;
+    border-top: 1px solid #bbb;
+    border-bottom: 1px solid #bbb;
+
+}
+
+p {
+    padding: 5px;
+    text-align: center;
+    color: #555;    
+}
+
+small {
+    font-size:.8em;
+}
+
+footer {
+    margin: 2px auto;
+    text-align:center;
+    border-top: 1px solid #777;
+    padding-top: 3px;
+}
+
+form input[type=text] {
+    text-align:center;
+    color: indigo;
+}
+
+select, input, button, fieldset {
+    font-size: 1.2em;
+    padding: 13px;
+}
+
+table td {
+    width:100px;
+    text-align:center;
+}
+
+table td:nth-child(1) {
+    /* first column in form table */
+}
+
+table tr:last-child {
+    border-top: 1px solid #bbb;
+}
+
+#input {
+    margin: 0px auto;
+    border: 1px solid #ddd;
+    padding: 5px;
+    background-color: #eeffee;
+    min-height: 60px;     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Ubuntu, Arial, sans-serif;
+}
+
+#output {
+    margin: 10px auto;
+    padding: 5px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    font-size: 1.3em;
+    min-height: 60px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+#mainImage {
+    width:300px;
+    height:auto;
+    animation: forwards moveimage 10s ease;
+}
+
+.fail {background-color:#ffeeee;}
+.success {background-color:#eeffee;}
+.info {background-color:#eeeeff;}
+.warning {background-color:yellow;}
+
+.green {
+    color: #009000;
+}
+
+.brown {
+    color: saddlebrown;
+}
+
+/* Animation */
+
+@keyframes moveimage {
+    
+    from {margin-right: -480px;}
+    to   {margin-right: 410px;}
+}

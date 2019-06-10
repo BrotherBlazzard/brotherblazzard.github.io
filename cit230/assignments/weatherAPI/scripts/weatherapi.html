@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Weather Site</title>
+</head>
+
+<body>
+  <h1>The Weather Site</h1>
+  <h2>Example WeatherUnderground Consumption</h2>
+  <main>
+    <h3 id="current"></h3>
+    <img id="icon" src="" alt="Current Weather Conditions Graphic">
+  </main>
+
+  <script>
+    var wr = new XMLHttpRequest();
+    wr.open('GET', 'http://api.wunderground.com/api/15342b83d4c08511/conditions/q/MN/Franklin.json', true);
+    wr.send();
+    wr.onload = function() {
+      var franklinw = JSON.parse(wr.responseText);          
+      document.getElementById('current').innerHTML = franklinw.current_observation.weather;
+      document.getElementById('icon').src = franklinw.current_observation.icon_url;
+    } 
+  </script>
+</body>
+</html>
