@@ -1,5 +1,6 @@
-let d = new Date();
+let d = new Date(); // Create an instance of the date object with no parameter
 
+//#region CreateLongDayOfTheWeekNames Array
 let weekday = new Array(7);
  weekday[0] = "Sunday";
  weekday[1] = "Monday";
@@ -8,7 +9,9 @@ let weekday = new Array(7);
  weekday[4] = "Thursday";
  weekday[5] = "Friday";
  weekday[6] = "Saturday";
+ //#endregion
 
+ //#region CreateLongMonthNames Array
 let month = new Array(12);
  month[0] = "January";
  month[1] = "February";
@@ -22,6 +25,15 @@ let month = new Array(12);
  month[9] = "October";
  month[10] = "November";
  month[11] = "December";
+//#endregion
 
+document.getElementById("currentDate").textContent = weekday[d.getDay()] + ", " + month[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
 
-document.getElementById("currentDate").innerHTML = weekday[d.getDay()] + ", " + d.getDate() + " " + month[d.getMonth()] + " " + d.getFullYear();
+//#region Using toLocaleDateString method
+try {
+  let options = {weekday: 'long', month: 'long', day:'numeric', year: 'numeric'};
+  document.getElementById('currentDate2').textContent = new Date().toLocaleDateString('en-US', options);
+} catch (e) {
+  alert('Error with code or your browser does not support Locale');
+}
+//#endregion
