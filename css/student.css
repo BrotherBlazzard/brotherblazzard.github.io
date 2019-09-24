@@ -3,7 +3,7 @@
 html, body {
     height: 100%;
     line-height: 1.4;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 html {
@@ -116,7 +116,7 @@ section ol li a:hover {
 }
 
 ol {
-    
+
 }
 
 table {
@@ -434,5 +434,5 @@ code,
         grid-template-columns: 1fr 1fr;
     }
 
-    
+
 }
