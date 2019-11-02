@@ -30,10 +30,10 @@ let month = new Array(12);
 document.getElementById("currentDate").textContent = weekday[d.getDay()] + ", " + month[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
 
 //#region Using toLocaleDateString method
-try {
-  let options = {weekday: 'long', month: 'long', day:'numeric', year: 'numeric'};
-  document.getElementById('currentDate2').textContent = new Date().toLocaleDateString('en-US', options);
-} catch (e) {
-  alert('Error with code or your browser does not support Locale');
-}
+// try {
+//   let options = {weekday: 'long', month: 'long', day:'numeric', year: 'numeric'};
+//   document.getElementById('currentDate2').textContent = new Date().toLocaleDateString('en-US', options);
+// } catch (e) {
+//   alert('Error with code or your browser does not support Locale');
+// }
 //#endregion
