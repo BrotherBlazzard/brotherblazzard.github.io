@@ -1,0 +1,100 @@
+body {
+  font-size: 18px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2 {
+  font-family: 'Baloo 2', Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 2px #777;
+}
+
+h2 {
+  font-size: 1.2rem;
+  text-align: center;
+  text-shadow: 2px 2px 2px #777;
+  padding: 5px;
+  background: radial-gradient(circle, #3377aa, #226677);
+  color: #fff;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+header,
+nav,
+main,
+footer {
+  margin: 0px auto;
+  max-width: 87em;
+  font-size: 0.85rem;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  padding: 0.25rem;
+  background: radial-gradient(circle, #4488bb, #fff);
+  color: #222;
+  overflow: auto;
+}
+
+section {
+  margin: 5px auto;
+  border: 1px solid #bbb;
+  padding: 0.25rem;
+  background-color: #fff;
+  color: #333;
+  width: 80%;
+  white-space: unset;
+  word-wrap: break-word;
+}
+
+section p {
+  margin: 0 15px;
+  padding: 15px;
+}
+
+footer {
+  color: #000;
+  padding-top: 1.2rem;
+  text-align: center;
+  font-size: 1.1rem;
+  letter-spacing: 1.5pt;
+  clear: both;
+}
+
+.gridone {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media only screen and (min-width: 48em) {
+  section {
+    width: 95%;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  footer {
+    font-size: 0.95rem;
+  }
+}
