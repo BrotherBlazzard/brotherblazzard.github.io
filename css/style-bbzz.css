@@ -50,7 +50,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Montaga", Helvetica, Arial, sans-serif;
+  font-family: 'Montaga', Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -159,7 +159,7 @@ section ul li {
 footer {
   font-size: 0.8em;
   text-align: center;
-  line-height: 0.5rem;
+  line-height: 0.75rem;
 }
 
 footer a {
@@ -176,7 +176,7 @@ aside {
 }
 
 code {
-  font-family: "Courier New", Courier, Consolas, sans-serif;
+  font-family: 'Courier New', Courier, Consolas, sans-serif;
   padding: 0.35rem;
   font-size: larger;
   background-color: #333;
@@ -197,13 +197,42 @@ code {
   text-align: center;
 }
 
+.stamp {
+  display: block;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #000;
+  text-shadow: 0 0 10px #777;
+}
+
+.autogrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  padding: 0;
+  margin: 0 5px 10px;
+}
+
+.autogrid li {
+  border: 1px solid #bbb;
+  background-color: tomato;
+  padding: 3px;
+  color: black;
+  font-weight: 700;
+  text-align: center;
+}
+
+.nodec {
+  list-style-type: none;
+  text-decoration: none;
+}
+
 input,
 select,
 textarea {
   padding: 0.5rem;
 }
 
-input[type="submit"] {
+input[type='submit'] {
   margin-top: 10px;
 }
 
@@ -247,13 +276,10 @@ label {
   }
 
   .stamp {
-    display: block;
     position: absolute;
-    right: 40px;
-    top: 20px;
+    right: 5px;
+    top: 5px;
     font-size: 0.8rem;
-    color: #000;
-    text-shadow: 0 0 10px #777;
   }
 }
 
@@ -264,5 +290,9 @@ label {
 
   .two-col {
     grid-template-columns: 1fr 1fr;
+  }
+  footer {
+    font-size: 1em;
+    line-height: 0.5rem;
   }
 }

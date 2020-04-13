@@ -1,127 +1,191 @@
 <!DOCTYPE html>
 <html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Brother Blazzard &lozf; BYU-Idaho &lozf; CIT &amp; WDD dsfaf</title>
+    <meta
+      name="description"
+      content="This page serves as an instruction and administrative supplement site for Brother Blazzard at Brigham Young University - Idaho in Computer Information Technology and Web Design and Development."
+    />
+    <link rel="apple-touch-icon" href="images/icon.png" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Brother Blazzard &lozf; BYU-Idaho &lozf; CIT &amp; WDD dsfaf</title>
-  <meta name="description"
-    content="This page serves as an instruction and administrative supplement site for Brother Blazzard at Brigham Young University - Idaho in Computer Information Technology and Web Design and Development.">
-  <link rel="apple-touch-icon" href="images/icon.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montaga%7CMontserrat"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style-bbzz.css" />
+  </head>
 
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montaga%7CMontserrat" rel="stylesheet">
-  <link rel="stylesheet" href="css/style-bbzz.css">
-</head>
-
-<body>
-  <header>
-    <h1>Course Supplement Site</h1>
-    <h2 class="tight">Brother Jason Blazzard</h2>
-
+  <body>
     <div class="stamp">
       <span id="currentDate"></span>
     </div>
-  </header>
-  <nav>
-    <ul class="head-nav">
-      <li>
-        <a href="#" onclick="toggleMenu()">&#10050; Menu</a>
-      </li>
-      <li>
-        <a href="cit111/" title="Introduction to Databases">&#10070; CIT 111</a>
-      </li>
-      <li>
-        <a href="cit160/" title="Introduction to Programming">&#10070; CIT 160</a>
-      </li>
-      <li>
-        <a href="cit230/" title="Web Frontend Development">&#10070; CIT 230</a>
-      </li>
-      <li>
-        <a href="cit260/" title="Object Oriented Programming with Java">&#10070; CIT 260</a>
-      </li>
-      <li>
-        <a href="cit336/" title="Web Backend Development">&#10070; CIT 336</a>
-      </li>
-      <li>
-        <a href="cit365/" title=".NET Software Development">&#10070; CIT 365</a>
-      </li>
-    </ul>
-  </nav>
-  <main>
-    <section>
-      <h2>Sandboxes</h2>
-      <ul>
+    <header>
+      <h1>Course Supplement Site</h1>
+      <h2 class="tight">Brother Jason Blazzard</h2>
+    </header>
+    <nav>
+      <ul class="head-nav">
+        <li><a href="#" onclick="toggleMenu()">&#10050; Menu</a></li>
         <li>
-          <a href="https://codepen.io/blazzard-jason/" target="_blank">codepen.io</a>
+          <a href="cit160/" title="Introduction to Programming"
+            >&#10070; CIT 160</a
+          >
+        </li>
+        <li><a href="wdd130/" title="Web Fundamentals">&#10070; WDD 130</a></li>
+        <li>
+          <a href="wdd230/" title="Web Frontend Development I"
+            >&#10070; WDD 230</a
+          >
         </li>
         <li>
-          <a href="https://jsfiddle.net/user/blazzard/fiddles/" target="_blank">jsfiddle.net</a>
+          <a href="cit336/" title="Web Backend Development">&#10070; CIT 336</a>
         </li>
         <li>
-          <a href="https://javascript30.com/" target="_blank">#JavaScript30</a> - Wes Bos</li>
-        <li>
-          <a href="https://cssgrid.io/" target="_blank">Learn CSS Grid</a> - Wes Bos</li>
-
-        <li>
-          <a href="https://thimble.mozilla.org/en-US/user/blazzard/2385465" target="_blank">Moz://a
-            Thimble</a></li>
-      </ul>
-    </section>
-    <section>
-      <h2>Frontend</h2>
-      <ul>
-        <li>
-          <a href="https://makeawebsitehub.com/the-html-5-mega-cheat-sheet/" target="_blank">HTML 5
-            Cheat Sheet</a>
-        </li>
-        <li>
-          <a href="https://htmlreference.io/" target="_blank">Visual guide to HTML</a>
-        </li>
-        <li>
-          <a href="https://cssreference.io/" target="_blank">Visual guide to CSS</a>
-        </li>
-        <li>
-          <a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a>
-        </li>
-        <li>
-          <a href="https://cssstats.com/" target="_blank">CSS Stats Eval</a>
-        </li>
-        <li>
-          <a href="http://keycode.info/" target="_blank">Get JS Keycode</a>
+          <a href="cit365/" title=".NET Software Development"
+            >&#10070; CIT 365</a
+          >
         </li>
       </ul>
-    </section>
-    <section>
-      <h2>Other</h2>
-      <ul>
-        <li><a href="/bookmarklets/">Bookmarklets</a></li>
-        <li><a href="https://developers.google.com/speed/libraries/">Google Hosted Libraries</a></li>
-        <li><a href="https://www.c-sharpcorner.com/" target="_blank">C#Corner</a></li>
-        <li><a href="https://csharppad.com/" target="_blank">C Sharp Pad - Run C# Online</a></li>
-        <li><a href="https://dotnet.microsoft.com/apps/aspnet" target="_blank">asp.net</a></li>
+    </nav>
+    <main>
+      <section>
+        <h2>Sandboxes</h2>
+        <ul>
+          <li>
+            <a href="https://codepen.io/blazzard-jason/" target="_blank"
+              >codepen.io</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://jsfiddle.net/user/blazzard/fiddles/"
+              target="_blank"
+              >jsfiddle.net</a
+            >
+          </li>
+          <li>
+            <a href="https://javascript30.com/" target="_blank"
+              >#JavaScript30</a
+            >
+            - Wes Bos
+          </li>
+          <li>
+            <a href="https://cssgrid.io/" target="_blank">Learn CSS Grid</a> -
+            Wes Bos
+          </li>
+
+          <li>
+            <a
+              href="https://thimble.mozilla.org/en-US/user/blazzard/2385465"
+              target="_blank"
+              >Moz://a Thimble</a
+            >
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Frontend</h2>
+        <ul>
+          <li>
+            <a
+              href="https://makeawebsitehub.com/the-html-5-mega-cheat-sheet/"
+              target="_blank"
+              >HTML 5 Cheat Sheet</a
+            >
+          </li>
+          <li>
+            <a href="https://htmlreference.io/" target="_blank"
+              >Visual guide to HTML</a
+            >
+          </li>
+          <li>
+            <a href="https://cssreference.io/" target="_blank"
+              >Visual guide to CSS</a
+            >
+          </li>
+          <li>
+            <a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a>
+          </li>
+          <li>
+            <a href="https://cssstats.com/" target="_blank">CSS Stats Eval</a>
+          </li>
+          <li>
+            <a href="http://keycode.info/" target="_blank">Get JS Keycode</a>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Other</h2>
+        <ul>
+          <li><a href="/bookmarklets/">Bookmarklets</a></li>
+          <li>
+            <a href="https://developers.google.com/speed/libraries/"
+              >Google Hosted Libraries</a
+            >
+          </li>
+          <li>
+            <a href="https://www.c-sharpcorner.com/" target="_blank"
+              >C#Corner</a
+            >
+          </li>
+          <li>
+            <a href="https://csharppad.com/" target="_blank"
+              >C Sharp Pad - Run C# Online</a
+            >
+          </li>
+          <li>
+            <a href="https://dotnet.microsoft.com/apps/aspnet" target="_blank"
+              >asp.net</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+    <aside>
+      <h2>Courses Taught @ BYU - Idaho</h2>
+      <ul class="autogrid nodec">
+        <li>WDD 130</li>
+        <li>WDD 230</li>
+        <li>WDD 331</li>
+        <li>WDD 499</li>
+        <li>CIT 111</li>
+        <li>CIT 160</li>
+        <li>CIT 260</li>
+        <li>CIT 336</li>
+        <li>CIT 365</li>
       </ul>
-    </section>
-  </main>
+    </aside>
 
-  <footer>
-    <p>AY 2019-2020 | <a href="https://www.byui.edu">BYU-Idaho</a> | Brother Jason B. Blazzard |
-      <a href="http://www.byui.edu/online" target="_blank"
-        title="BYU-Idaho Online Learning">BYU-Idaho Online
-        Learning</a> |
-      <a href="http://www.byui.edu/catalog" target="_blank" title="BYU-Idaho Catalog">Catalog</a>
-    </p>
-    <p class="footbar">
-      <small>Copyright &copy; 1994 • All Rights Reserved</small>
-    </p>
+    <footer>
+      <p>
+        Fall 2015 - Spring 2020 | <a href="https://www.byui.edu">BYU-Idaho</a> |
+        Brother Jason B. Blazzard |
+        <a
+          href="http://www.byui.edu/online"
+          target="_blank"
+          title="BYU-Idaho Online Learning"
+          >BYU-Idaho Online Learning</a
+        >
+        |
+        <a
+          href="http://www.byui.edu/catalog"
+          target="_blank"
+          title="BYU-Idaho Catalog"
+          >Catalog</a
+        >
+      </p>
+      <p class="footbar">
+        <small>Copyright &copy; 1994 • All Rights Reserved</small>
+      </p>
+    </footer>
 
-
-  </footer>
-
-  <script src="js/currentDate.js"></script>
-  <script src="js/toggleMenu.js"></script>
-
-</body>
-
+    <script src="js/currentDate.js"></script>
+    <script src="js/toggleMenu.js"></script>
+  </body>
 </html>
