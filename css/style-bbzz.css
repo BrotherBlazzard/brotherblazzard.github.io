@@ -58,6 +58,7 @@ h4 {
 h1 {
   font-size: 1.6rem;
   text-align: center;
+  padding: 0.25rem;
 }
 
 h2 {
@@ -160,6 +161,7 @@ footer {
   font-size: 0.8em;
   text-align: center;
   line-height: 0.75rem;
+  padding: 0.5rem;
 }
 
 footer a {
