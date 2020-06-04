@@ -16,6 +16,8 @@ h2 {
 h1 {
   font-size: 1.5rem;
   text-shadow: 2px 2px 2px #777;
+  text-align: center;
+  font-size: 1rem;
 }
 
 h2 {
@@ -37,7 +39,6 @@ main,
 footer {
   margin: 0px auto;
   max-width: 87em;
-  font-size: 0.85rem;
 }
 
 header {
@@ -51,6 +52,7 @@ main {
   background: radial-gradient(circle, #4488bb, #fff);
   color: #222;
   overflow: auto;
+  font-size: .9rem;
 }
 
 section {
@@ -73,7 +75,7 @@ footer {
   color: #000;
   padding-top: 1.2rem;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   letter-spacing: 1.5pt;
   clear: both;
 }
@@ -87,9 +89,11 @@ footer {
   section {
     width: 95%;
   }
+
   h1 {
     font-size: 2rem;
   }
+
   h2 {
     font-size: 1.5rem;
   }
