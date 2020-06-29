@@ -45,6 +45,7 @@ footer {
 main {
   max-width: var(--mainmaxwidth);
   margin: 0 auto 2rem;
+  padding: 2rem;
 }
 
 h1,
@@ -79,6 +80,7 @@ ul,
 ol {
   margin-left: 1.2rem;
 }
+
 section {
   padding: 10px;
   background-color: #eee;
@@ -178,6 +180,7 @@ label {
 }
 
 @media screen and (min-width: 37.5em) {
+
   html,
   body {
     height: 100%;
