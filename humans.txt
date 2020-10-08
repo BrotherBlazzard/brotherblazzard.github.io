@@ -11,5 +11,5 @@
 
 # TECHNOLOGY COLOPHON
 
-    Contempory CSS, HTML
+    Contemporary CSS, HTML
     normalize.css
