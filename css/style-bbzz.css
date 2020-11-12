@@ -278,13 +278,6 @@ label {
   .head-nav li {
     display: block;
   }
-
-  .stamp {
-    position: absolute;
-    right: 5px;
-    top: 5px;
-    font-size: 0.8rem;
-  }
 }
 
 @media screen and (min-width: 64em) {
