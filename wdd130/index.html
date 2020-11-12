@@ -3,18 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>Your title should be about 50-60 characters and meaningful</title>
+    <title>WDD 130 - Introduction to Web Development</title>
     <meta
       name="description"
       content="~155 characters summarizing with keywords the page content - on page SEO"
     />
-    <link rel="stylesheet" href="" />
+    <link rel="apple-touch-icon" href="images/icon.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montaga&Montserrat"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style-bbzz.css" />
   </head>
   <body>
-    <header><h1>WDD 130 - Web Fundamentals</h1></header>
-    <nav></nav>
-    <main>Hello World</main>
-    <footer>sdfsdfsdafsadfsad</footer>
-    <script src=""></script>
+    <header>
+      <h1>WDD 130 - Introduction to Web Development</h1>
+    </header>
+    <nav>
+      <ul class="head-nav">
+        <li><a href="#" onclick="toggleMenu()">&#10050; Menu</a></li>
+        <li>
+          <a href="./" title="Home">🏠 Home</a>
+        </li>
+        <li>
+          <a href="cit160/" title="Introduction to Programming"
+            >&#10070; CIT 160</a
+          >
+        </li>
+        <li><a href="wdd130/" title="Web Fundamentals">&#10070; WDD 130</a></li>
+        <li>
+          <a href="wdd230/" title="Web Frontend Development I">🥑 WDD 230</a>
+        </li>
+        <li>
+          <a href="cit336/" title="Web Backend Development">&#10070; CIT 336</a>
+        </li>
+        <li>
+          <a href="cit365/" title=".NET Software Development"
+            >&#10070; CIT 365</a
+          >
+        </li>
+        <li>
+          <a href="wdd499/" title="WDD Senior Capstone">&#10070; WDD 499</a>
+        </li>
+      </ul>
+    </nav>
+    <main><h2>Topics: HTML and CSS</h2></main>
+    <footer>
+      <p>
+        Fall 2015 - <span id="currentterm"></span> |
+        <a href="https://www.byui.edu">BYU-Idaho</a> | Brother Jason B. Blazzard
+        |
+        <a
+          href="http://www.byui.edu/online"
+          target="_blank"
+          title="BYU-Idaho Online Learning"
+          >BYU-Idaho Online Learning</a
+        >
+        |
+        <a
+          href="http://www.byui.edu/catalog"
+          target="_blank"
+          title="BYU-Idaho Catalog"
+          >Catalog</a
+        >
+      </p>
+      <p class="footbar">
+        <small>Copyright &copy; 1994 • All Rights Reserved</small>
+      </p>
+    </footer>
+    <script src="js/currentDate.js"></script>
+    <script src="js/toggleMenu.js"></script>
   </body>
 </html>

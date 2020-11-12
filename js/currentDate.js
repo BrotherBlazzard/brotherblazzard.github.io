@@ -37,3 +37,29 @@ document.getElementById("currentDate").textContent = weekday[d.getDay()] + ", " 
 //   alert('Error with code or your browser does not support Locale');
 // }
 //#endregion
+
+// current terms
+let term = "";
+switch (d.getMonth()) {
+  case 0:
+  case 1:
+  case 2:
+    term = "Winter";
+    break;
+  case 3:
+  case 4:
+  case 5:
+  case 6:
+    term = "Spring";
+    break;
+  case 7:
+    term = "Summer";
+    break;
+  case 8:
+  case 9:
+  case 10:
+  case 11:
+    term = "Fall";
+    break;
+}
+document.getElementById('currentterm').textContent = `${term} ${d.getFullYear()}`;
