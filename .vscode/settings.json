@@ -5,7 +5,8 @@
   "spellright.documentTypes": [
     "markdown",
     "latex",
-    "plaintext"
+    "plaintext",
+    "html"
   ],
   "liveServer.settings.port": 5502
 }
