@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>230 Web Frontend Dev Standards</title>
+  <link rel="stylesheet" href="css/test.css">
+</head>
+<body>
+  <div class="contain">
+    <p>The following list is modeled, in part, after <a href="https://frontendchecklist.io/">The Front-End Checklist</a> by David Dias. <br />The references are to <a href="https://developer.mozilla.org/en-US/">MDN web doc by moz://a</a> sources.</p>
+    <h2>Overall</h2>
+    <ul>
+    <li>All folders and files follow <a title="Web Naming Rules" href="https://byui.instructure.com/courses/10157/pages/web-naming-rules" data-api-endpoint="https://byui.instructure.com/api/v1/courses/10157/pages/web-naming-rules" data-api-returntype="Page">the course naming rules</a> which include lowercase only, no spaces, and are friendly/semantic.</li>
+    <li>No relevant violations of <strong>design principles</strong> of <a title="W02 Activity: Design Principles" href="https://byui.instructure.com/courses/10157/pages/w02-activity-design-principles" data-api-endpoint="https://byui.instructure.com/api/v1/courses/10157/pages/w02-activity-design-principles" data-api-returntype="Page">alignment, proximity, contrast, repetition</a>, and usable typography.</li>
+    <li>The visual appearance of all pages in the site must be <strong>responsive</strong>, uniform, and consistent at three, basic view levels. </li>
+    <li>The page/site does not contain spelling and grammatical errors.</li>
+    </ul>
+    <h2>Head</h2>
+    <p>The following are correctly declared and used in the head section of all <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html">HTML</a> pages.</p>
+    <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Doctype">HTML5 doctype</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta">meta charset attribute</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag">meta viewport</a> (do not use a maximum-scale)</li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title?ref=frontendchecklist">A meaningful title</a> (about 70 characters maximum)</li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#Adding_an_author_and_description?ref=frontendchecklist">meta description</a> (SEO - unique and no more than 300 characters)</li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link">external CSS file references</a> are in the proper order</li>
+    </ul>
+    <h2>HTML</h2>
+    <ul>
+    <li>W3C compliant - validated to identify <strong>possible</strong> issues - <a href="https://validator.w3.org/?ref=frontendchecklist" target="_blank" rel="noopener">W3C validator</a></li>
+    <li><a href="https://htmlreference.io">Semantic elements</a> are used</li>
+    <li>Check for broken links - <a href="https://validator.w3.org/checklink?ref=frontendchecklist" target="_blank" rel="noopener">W3C Link Checker</a></li>
+    </ul>
+    <h2>CSS</h2>
+    <ul>
+    <li>All embedded or inline CSS is avoided</li>
+    <li>W3C compliant - validated to identify possible issues - <a href="https://jigsaw.w3.org/css-validator/">W3C validator</a></li>
+    <li><a href="https://necolas.github.io/normalize.css">CSS normalize</a> is used and up to date</li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/ID_selectors">Unique ID selectors</a> - if an ID selector is used, it is unique to a page (the planned use of <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors">class selector</a>&nbsp;is preferred)</li>
+    <li>All pages are tested for responsive web design and with at least two browsers with appropriately sized text, links, and no scrolling to the right nor deadspace.</li>
+    <li>No reasonable violations of design principles in the styling and layout in all three views.</li>
+    </ul>
+    <h2>JavaScript</h2>
+    <ul>
+    <li>No errors nor references to unused JavaScript functions per page</li>
+    <li>No output to the console in the live version of the page</li>
+    </ul>
+    <h2>Images</h2>
+    <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML">Optimized</a> to fit the design needs of the site (image is no larger than needed at its maximum size on the page)</li>
+    <li><a href="https://developers.google.com/web/tools/lighthouse/audits/aspect-ratio">Aspect ratios</a> match the saved image ratio</li>
+    <li>The <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img">alt attribute</a> is assigned a relevant value</li>
+    </ul>
+    <h2>Accessibility</h2>
+    <ul>
+    <li>The <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang">lang attribute</a> is used in the opening &lt;html&gt; tag</li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements">Headings</a> are used in the proper order</li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility">Accessibility</a> test errors and warnings are reviewed - <a href="http://wave.webaim.org/">wave testing through the web developer extension</a></li>
+    <li>No <a href="https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Accessibility#Color_and_color_contrast">color contrast</a> violations - <a href="https://developers.google.com/web/tools/chrome-devtools/accessibility/reference#contrast">DevTools Audit</a></li>
+    </ul>
+    <h2>Performance</h2>
+    <ul>
+    <li>The page weight does not exceed 500KB</li>
+    <li><a href="https://developers.google.com/speed/pagespeed/insights">Google Pagespeed test</a> results at least 90</li>
+    </ul>
+    </div>
+</body>
+</html>
