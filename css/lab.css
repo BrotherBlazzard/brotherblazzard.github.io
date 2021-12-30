@@ -89,6 +89,16 @@ footer {
   padding: 5px;
 }
 
+#currentDate {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: auto;
+  font-size: .7rem;
+  font-variant: small-caps;
+  text-shadow: 0 0 15px rgba(0,0,0,.8);
+}
+
 @media only screen and (min-width: 48em) {
   section {
     width: 95%;

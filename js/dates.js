@@ -27,7 +27,11 @@ let month = new Array(12);
  month[11] = "December";
 //#endregion
 
-document.getElementById("currentDate").textContent = weekday[d.getDay()] + ", " + month[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+document.getElementById('currentDate').textContent = `${
+  weekday[d.getDay()]
+}, ${d.getDate()} ${month[d.getMonth()]} ${d.getFullYear()}`;
+
+document.getElementById('lastmod').textContent = document.lastModified;
 
 //#region Using toLocaleDateString method
 // try {
@@ -62,4 +66,4 @@ switch (d.getMonth()) {
     term = "Fall";
     break;
 }
-document.getElementById('currentterm').textContent = `${term} ${d.getFullYear()}`;
+document.getElementById('currentTerm').textContent = `${term} ${d.getFullYear()}`;
