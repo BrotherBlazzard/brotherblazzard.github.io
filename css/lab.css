@@ -80,6 +80,11 @@ footer {
   clear: both;
 }
 
+.smaller {
+  font-size: .7rem;
+  color: rgba(14, 14, 95, 0.9);
+}
+
 .gridone {
   display: grid;
   grid-template-columns: 1fr;
