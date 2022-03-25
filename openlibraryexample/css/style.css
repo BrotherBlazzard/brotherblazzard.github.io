@@ -1,0 +1,20 @@
+h1 {
+  border-bottom: 1px solid #bbb;
+}
+
+input,
+button {
+  padding: 0.5rem;
+}
+
+ul {
+  margin: 0.5rem 0.5rem 0.5rem 1rem;
+  border: 1px solid #bbb;
+  padding: 0.5rem;
+  background-color: #eee;
+  list-style: none;
+}
+
+label {
+  display: block;
+}
