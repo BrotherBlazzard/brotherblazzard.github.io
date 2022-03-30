@@ -16,8 +16,8 @@ export async function getBooksBySubject(subject) {
 
   // screen output - should be placed in a view
   numberFound.textContent = `Total Found: ${data.numFound}`;
-  let books = data.docs;
-  books.forEach((book) => {
+
+  data.docs.forEach((book) => {
     let li = document.createElement('li');
     li.textContent = book.title;
     booklist.append(li);
