@@ -3,14 +3,14 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 h1,
-h2 {
-  font-family: 'Baloo 2', Arial, Helvetica, sans-serif;
+h2,
+h3 {
+  font-family: 'Baloo Tamma 2', helvetica, sans-serif;
 }
 
 h1 {
@@ -52,7 +52,7 @@ main {
   background: radial-gradient(circle, #4488bb, #fff);
   color: #222;
   overflow: auto;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 section {
@@ -81,7 +81,7 @@ footer {
 }
 
 .smaller {
-  font-size: .7rem;
+  font-size: 0.7rem;
   color: rgba(14, 14, 95, 0.9);
 }
 
@@ -91,20 +91,25 @@ footer {
 }
 
 .gridone li {
-  padding: 5px;
+  padding: 3px;
+  font-size: larger;
 }
 
 #currentDate {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: auto;
-  font-size: .7rem;
+  text-align: center;
+  font-size: 0.7rem;
   font-variant: small-caps;
-  text-shadow: 0 0 15px rgba(0,0,0,.8);
+  text-shadow: 0 0 25px rgba(17, 2, 37, 0.8);
 }
 
 @media only screen and (min-width: 48em) {
+  #currentDate {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: auto;
+  }
+
   section {
     width: 95%;
   }
@@ -115,6 +120,10 @@ footer {
 
   h2 {
     font-size: 1.5rem;
+  }
+
+  .gridone ul {
+    margin-left: 30px;
   }
 
   footer {
