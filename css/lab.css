@@ -25,7 +25,7 @@ h2 {
   text-align: center;
   text-shadow: 2px 2px 2px #777;
   padding: 5px;
-  background: radial-gradient(circle, #226677, #226677c5);
+  background: radial-gradient(circle, rgba(7, 40, 60, 1), rgba(7, 40, 60, 0.5));
   color: #fff;
 }
 
@@ -49,19 +49,15 @@ header {
 
 main {
   padding: 0.25rem;
-  background: radial-gradient(circle, #4488bb, #fff);
+  background: rgb(238, 238, 238);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   color: #222;
   overflow: auto;
   font-size: 0.9rem;
 }
 
 section {
-  margin: 5px auto;
-  border: 1px solid #bbb;
-  padding: 0.25rem;
-  background-color: #fff;
-  color: #333;
-  width: 80%;
+  padding: 0.5rem;
   white-space: unset;
   word-wrap: break-word;
 }
@@ -81,7 +77,7 @@ footer {
 }
 
 .smaller {
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   color: rgba(14, 14, 95, 0.9);
 }
 
@@ -97,19 +93,17 @@ footer {
 
 #currentDate {
   text-align: center;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-variant: small-caps;
-  text-shadow: 0 0 25px rgba(17, 2, 37, 0.8);
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+  margin: 0 auto;
+  border-top: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+  padding: 0.25rem;
+  width: fit-content;
 }
 
 @media only screen and (min-width: 48em) {
-  #currentDate {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    width: auto;
-  }
-
   section {
     width: 95%;
   }
