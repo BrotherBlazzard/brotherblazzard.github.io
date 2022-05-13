@@ -126,6 +126,10 @@ footer {
     right: 50px;
   }
 
+  .note {
+    font-size: 0.9rem;
+  }
+
   footer {
     font-size: 0.95rem;
   }
