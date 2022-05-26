@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-size: 18px;
   height: 100vh;
@@ -86,9 +92,18 @@ footer {
   grid-template-columns: 1fr;
 }
 
+.gridone ul {
+  margin-left: 3rem;
+  list-style: none;
+}
+
 .gridone li {
   padding: 3px;
   font-size: larger;
+}
+
+.gridone li::before {
+  content: '🎦';
 }
 
 #currentDate {
@@ -101,6 +116,21 @@ footer {
   border-bottom: 1px solid #bbb;
   padding: 0.25rem;
   width: fit-content;
+}
+
+.callout {
+  margin: 1rem auto;
+  background-color: #dbf3fa;
+  padding: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  font-size: 0.9rem;
+  color: #000;
+  max-width: 85%;
+}
+
+.smallnote {
+  font-size: 0.75rem;
+  font-style: italic;
 }
 
 @media only screen and (min-width: 48em) {
@@ -117,7 +147,7 @@ footer {
   }
 
   .gridone ul {
-    margin-left: 30px;
+    margin-left: 4rem;
   }
 
   .abso {
