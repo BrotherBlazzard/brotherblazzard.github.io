@@ -118,6 +118,27 @@ footer {
   width: fit-content;
 }
 
+.info {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-gap: 0.5rem;
+  margin: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  background-color: #bbb;
+  max-width: 600px;
+}
+
+.info p {
+  grid-column: 1/3;
+  padding: 0;
+}
+
+.label {
+  font-weight: 700;
+  text-align: right;
+}
+
 .callout {
   margin: 1rem auto;
   background-color: #dbf3fa;
