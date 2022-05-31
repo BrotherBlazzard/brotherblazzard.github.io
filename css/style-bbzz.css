@@ -132,6 +132,8 @@ nav {
 
 .tight {
   margin-top: -5px;
+  text-align: center;
+  font-size: larger;
 }
 
 .stamp {
@@ -153,8 +155,18 @@ section {
   border: 1px solid #bbb;
 }
 
+section ul {
+  margin-left: 0.5rem;
+  padding: 0;
+  list-style: none;
+}
+
 section ul li {
-  font-size: 0.85rem;
+  font-size: 0.95rem;
+}
+
+section ul li::before {
+  content: '💡';
 }
 
 footer {
