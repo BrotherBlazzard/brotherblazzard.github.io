@@ -30,7 +30,6 @@ month[11] = "December";
 document.getElementById("currentDate").textContent = `Today is ${
   weekday[d.getDay()]
 }, ${d.getDate()} ${month[d.getMonth()]} ${d.getFullYear()}`;
-
 document.getElementById("lastmod").textContent = document.lastModified;
 
 //#region Using toLocaleDateString method
