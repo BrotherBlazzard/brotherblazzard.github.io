@@ -1,12 +1,5 @@
 {
-  "spellright.language": [
-    "en"
-  ],
-  "spellright.documentTypes": [
-    "markdown",
-    "latex",
-    "plaintext",
-    "html"
-  ],
+  "spellright.language": ["en"],
+  "spellright.documentTypes": ["markdown", "latex", "plaintext", "jsonc"],
   "liveServer.settings.port": 5502
 }
