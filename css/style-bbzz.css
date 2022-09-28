@@ -300,6 +300,7 @@ label {
   .two-col {
     grid-template-columns: 1fr 1fr;
   }
+
   footer {
     font-size: 1em;
     line-height: 0.5rem;
