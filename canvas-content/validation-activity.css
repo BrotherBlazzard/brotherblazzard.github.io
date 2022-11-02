@@ -1,0 +1,33 @@
+body {
+  font-family: 'Comic Sans MS', sans-serif;
+  text-size: 18px;
+  margin: 1rem;
+}
+
+h2 {
+  text-align: center;
+  color: navy;
+  padding: 10;
+  text-shadow: 0 0 30px #eee;
+  text-align: center;
+}
+
+h4 {
+  cursor: hand;
+}
+
+p {
+  margin: 20 px;
+}
+
+.test {
+  margn: 1rem;
+}
+
+.contrast {
+  margin: 1rem;
+  border: 1px solid rbga(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  background-color: #ddd;
+  color: #777;
+}
