@@ -16,23 +16,27 @@
 </head>
 
 <body>
-  <div id="currentDate"></div>
+
   <header>
     <h1>WDD 230 - Virtual Lab Recordings</h1>
   </header>
-  <main class="gridone">
+  <main>
     <section>
       <h2><span id="currentTerm"></span></h2>
-      <div class="info">
-        <span class="label">Live Lab Times:</span>
-        <span class="content">Tuesdays at 8:00 p.m. MDT</span>
+      <div class="callout">
+        <span class="label">Live Lab:</span>
+        <span class="content">Tuesdays at 8:00 p.m. MDT</span><br>
         <span class="label">Location:</span>
         <span class="content"><a href="https://byui.zoom.us/j/151269593" target="_blank"
             rel="noopener">https://byui.zoom.us/j/151269593</a></span>
-        <p class="smaller">The recordings are made available as soon as possible following the live
-          lab session.</p>
-      </div>
 
+      </div>
+      <div class="callout">
+        <span class="label">Mountain Time:</span>
+        <span class="content" id="currentTime"></span>
+      </div>
+      <p>The recordings are made available as soon as possible following the live
+        lab session.</p>
       <ul>
         <li>
           <a href="https://video.byui.edu/media/t/1_o2yuwj8i" target="_blank" rel="noopener">03
@@ -71,7 +75,7 @@
       </ul>
       <div class="callout">
         <h3>Downloading Instructions</h3>
-        <p class="smallnote">💡 All streamed videos from BYU-Idaho's Kaltura server have
+        <p class="smallnote">All streamed videos from BYU-Idaho's video server have
           <strong>og:video</strong> meta properties from which you can extract the direct .mp4 file
           URL.
         </p>
@@ -79,7 +83,7 @@
     </section>
   </main>
   <footer>
-    <p>🛠️ Questions?: Email Brother Blazzard - blazzardj@byui.edu</p>
+    <p>Questions❓: Email Brother Blazzard - blazzardj@byui.edu</p>
     <p class="smaller">Last Modified Date: <span id="lastmod"></span></p>
   </footer>
   <hr>

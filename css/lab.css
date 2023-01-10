@@ -5,11 +5,6 @@
 }
 
 body {
-  font-size: 18px;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   font-family: Arial, sans-serif;
 }
 
@@ -22,16 +17,18 @@ h3 {
 h1 {
   font-size: 1.5rem;
   text-shadow: 2px 2px 2px #777;
-  text-align: center;
   font-size: 1rem;
 }
 
 h2 {
   font-size: 1.2rem;
-  text-align: center;
-  text-shadow: 2px 2px 2px #777;
-  padding: 5px;
-  background: radial-gradient(circle, rgba(7, 40, 60, 1), rgba(7, 40, 60, 0.5));
+  text-shadow: 1px 1px 2px #eee;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(
+    to right,
+    rgba(7, 40, 60, 1),
+    rgba(7, 40, 60, 0.5)
+  );
   color: #fff;
 }
 
@@ -43,15 +40,10 @@ header,
 nav,
 main,
 footer {
-  margin: 0px auto;
-  max-width: 87em;
+  margin: 0 auto;
+  max-width: 760px;
 }
 
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 main {
   padding: 0.25rem;
@@ -78,7 +70,6 @@ footer {
   padding-top: 1.2rem;
   text-align: center;
   font-size: 0.8rem;
-  letter-spacing: 1.5pt;
   clear: both;
 }
 
@@ -87,51 +78,32 @@ footer {
   color: rgba(14, 14, 95, 0.9);
 }
 
-.gridone {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-.gridone ul {
+main ul {
   margin-left: 3rem;
   list-style: none;
 }
 
-.gridone li {
+main li {
   padding: 3px;
   font-size: larger;
 }
 
-.gridone li::before {
+main li::before {
   content: '🎦';
-}
-
-#currentDate {
-  text-align: center;
-  font-size: 0.8rem;
-  font-variant: small-caps;
-  text-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
-  margin: 0 auto;
-  border-top: 1px solid #bbb;
-  border-bottom: 1px solid #bbb;
-  padding: 0.25rem;
-  width: fit-content;
 }
 
 .info {
   display: grid;
   grid-template-columns: 150px 1fr;
   grid-gap: 0.5rem;
-  margin: 1rem;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 1rem;
-  background-color: #bbb;
-  max-width: 600px;
 }
 
-.info p {
-  grid-column: 1/3;
-  padding: 0;
+.callout {
+  margin: 1rem 0.5rem 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  background-color: rgba(7, 40, 60, 0.3);
+  max-width: 600px;
 }
 
 .label {
@@ -139,18 +111,8 @@ footer {
   text-align: right;
 }
 
-.callout {
-  margin: 1rem auto;
-  background-color: #dbf3fa;
-  padding: 0.5rem;
-  border: 1px solid rgba(0, 0, 0, 0.25);
-  font-size: 0.9rem;
-  color: #000;
-  max-width: 85%;
-}
-
 .smallnote {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-style: italic;
 }
 
@@ -167,19 +129,11 @@ footer {
     font-size: 1.5rem;
   }
 
-  .gridone ul {
-    margin-left: 4rem;
+  main ul {
+    margin-left: 3rem;
   }
 
-  .abso {
-    position: absolute;
-    bottom: 25px;
-    right: 50px;
-  }
 
-  .note {
-    font-size: 0.9rem;
-  }
 
   footer {
     font-size: 0.95rem;
