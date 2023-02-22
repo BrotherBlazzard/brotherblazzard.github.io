@@ -5,19 +5,13 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-}
-
-h1,
-h2,
-h3 {
-  font-family: 'Baloo Tamma 2', helvetica, sans-serif;
+  font-family: 'Baloo Tamma 2', Arial, sans-serif;
 }
 
 h1 {
   font-size: 1.5rem;
   text-shadow: 2px 2px 2px #777;
-  font-size: 1rem;
+  margin: .5rem .5rem 0;
 }
 
 h2 {
@@ -33,7 +27,7 @@ h2 {
 }
 
 p {
-  margin: 0 0 1rem;
+  margin: 0 0 .5rem;
 }
 
 header,
@@ -47,22 +41,19 @@ footer {
 
 main {
   padding: 0.25rem;
-  background: rgb(238, 238, 238);
+  background: rgba(238, 238, 238, .5);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  color: #222;
-  overflow: auto;
-  font-size: 0.9rem;
 }
 
 section {
-  padding: 0.5rem;
+  padding: 0.75rem;
   white-space: unset;
   word-wrap: break-word;
 }
 
 section p {
-  margin: 0 15px;
-  padding: 15px;
+  margin: 0 1rem;
+  padding: 1rem;
 }
 
 footer {
@@ -103,7 +94,6 @@ main li::before {
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 1rem;
   background-color: rgba(7, 40, 60, 0.3);
-  max-width: 600px;
 }
 
 .label {
@@ -125,14 +115,10 @@ main li::before {
 }
 
 @media only screen and (min-width: 48em) {
-  section {
-    width: 95%;
-  }
-
-  h1 {
+h1 {
     font-size: 2rem;
+    margin: .5rem 0 0;
   }
-
   h2 {
     font-size: 1.5rem;
   }
