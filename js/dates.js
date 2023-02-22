@@ -28,9 +28,8 @@ switch (d.getMonth()) {
 document.getElementById("currentTerm").textContent = `${term} ${d.getFullYear()}`;
 
 
-// Mountain Time Zone
-const moment = require('moment-timezone');
-const date = moment.tz(d, 'America/Denver').format();
-document.getElementById(
-  'currentTime'
-).textContent = `${date}`;
+// get current MTN time
+const timezone = "America/Denver"; // Mountain Time Zone
+const mountaintime = d.toLocaleTimeString('en-US', { timeZone: timezone });
+const mtntimeintl = d.toLocaleTimeString('en-GB', { timeZone: timezone });
+document.getElementById('currentDate').textContent = `Current Mountain Time: ${mountaintime} (${mtntimeintl})`;

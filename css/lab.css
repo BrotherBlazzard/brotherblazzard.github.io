@@ -116,6 +116,14 @@ main li::before {
   font-style: italic;
 }
 
+#currentDate {
+  font-size: 0.9rem;
+  margin: 0 1rem 1rem;
+  color: #08283C;
+  font-weight: 700;
+  font-style: italic;
+}
+
 @media only screen and (min-width: 48em) {
   section {
     width: 95%;
