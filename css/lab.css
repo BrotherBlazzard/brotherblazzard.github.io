@@ -18,11 +18,9 @@ h2 {
   font-size: 1.2rem;
   text-shadow: 1px 1px 2px #eee;
   padding: 0.5rem 1rem;
-  background: linear-gradient(
-    to right,
-    rgba(7, 40, 60, 1),
-    rgba(7, 40, 60, 0.5)
-  );
+  background: linear-gradient(to right,
+      rgba(7, 40, 60, 1),
+      rgba(7, 40, 60, 0.5));
   color: #fff;
 }
 
@@ -65,7 +63,7 @@ footer {
 }
 
 .smaller {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   color: rgba(14, 14, 95, 0.9);
 }
 
@@ -114,11 +112,12 @@ main li::before {
   font-style: italic;
 }
 
-@media only screen and (min-width: 48em) {
-h1 {
+@media (min-width: 48em) {
+  h1 {
     font-size: 2rem;
     margin: .5rem 0 0;
   }
+
   h2 {
     font-size: 1.5rem;
   }
@@ -126,8 +125,6 @@ h1 {
   main ul {
     margin-left: 3rem;
   }
-
-
 
   footer {
     font-size: 0.95rem;
