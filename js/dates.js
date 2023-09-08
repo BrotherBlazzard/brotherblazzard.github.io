@@ -30,6 +30,6 @@ document.getElementById("currentTerm").textContent = `${term} ${d.getFullYear()}
 
 // get current MTN time
 const timezone = "America/Denver"; // Mountain Time Zone
-const mountaintime = d.toLocaleTimeString('en-US', { timeZone: timezone });
+// const mountaintime = d.toLocaleTimeString('en-US', { timeZone: timezone });
 const mtntimeintl = d.toLocaleTimeString('en-GB', { timeZone: timezone });
-document.getElementById('currentDate').textContent = `Current Mountain Time: ${mountaintime} (${mtntimeintl})`;
+document.getElementById('currentDate').textContent = `Current Mountain Time: ${mtntimeintl}`;
