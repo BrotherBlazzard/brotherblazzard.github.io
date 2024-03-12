@@ -32,4 +32,4 @@ document.getElementById("currentTerm").textContent = `${term} ${d.getFullYear()}
 const timezone = "America/Denver"; // Mountain Time Zone
 // const mountaintime = d.toLocaleTimeString('en-US', { timeZone: timezone });
 const mtntimeintl = d.toLocaleTimeString('en-GB', { timeZone: timezone });
-document.getElementById('currentDate').textContent = `Current Mountain | UTC-7 Time: ${mtntimeintl}`;
+document.getElementById('currentDate').textContent = `Current Mountain UTC-6 Time: ${mtntimeintl}`;

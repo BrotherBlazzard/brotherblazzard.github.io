@@ -290,6 +290,31 @@ label {
   .head-nav li {
     display: block;
   }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 0.5rem;
+  }
+
+  .cards div {
+    border: 1px solid #ddd;
+    padding: .5rem;
+    background-color: #eee;
+    color: #000;
+  }
+
+  .cards div:hover {
+    background-color: #bbb;
+  }
+
+  .cards h3 {
+    color: #000;
+  }
+
+  .cards p {
+    padding: .5rem;
+  }
 }
 
 @media screen and (min-width: 64em) {
@@ -300,6 +325,8 @@ label {
   .two-col {
     grid-template-columns: 1fr 1fr;
   }
+
+  
 
   footer {
     font-size: 1em;
