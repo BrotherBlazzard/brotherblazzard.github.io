@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Salt Lake Temple",
+        "location": "Salt Lake City, Utah, USA",
+        "dedicationDate": "April 6, 1893",
+        "squareFootage": 253000,
+        "site": "10 acres",
+        "height": 210,
+        "ordinanceRooms": 4,
+        "sealingRooms": 22,
+        "baptismalFonts": 1,
+        "image": "https://www.churchofjesuschrist.org/bc/content/shared/content/images/gospel-library/manual/35686/35686_000_001_01_saltLakeTemple.jpg"
+    },
+    {
+        "name": "Laie Hawaii Temple",
+        "location": "Laie, Hawaii, USA",
+        "dedicationDate": "November 27, 1919",
+        "squareFootage": 47000,
+        "site": "11 acres",
+        "height": 74,
+        "ordinanceRooms": 2,
+        "sealingRooms": 2,
+        "baptismalFonts": 1,
+        "image": "https://www.churchofjesuschrist.org/bc/content/shared/content/images/gospel-library/manual/35686/35686_000_001_01_laieHawaiiTemple.jpg"
+    },
+    {
+        "name": "Cardston Alberta Temple",
+        "location": "Cardston, Alberta, Canada",
+        "dedicationDate": "August 26, 1923",
+        "squareFootage": 88000,
+        "site": "10 acres",
+        "height": 170,
+        "ordinanceRooms": 4,
+        "sealingRooms": 2,
+        "baptismalFonts": 1,
+        "image": "https://www.churchofjesuschrist.org/bc/content/shared/content/images/gospel-library/manual/35686/35686_000_001_01_cardstonAlbertaTemple.jpg"
+    },
+    {
+        "name": "Los Angeles California Temple",
+        "location": "Los Angeles, California, USA",
+        "dedicationDate": "March 11, 1956",
+        "squareFootage": 19000,
+        "site": "13 acres",
+        "height": 257,
+        "ordinanceRooms": 4,
+        "sealingRooms": 2,
+        "baptismalFonts": 1,
+        "image": "https://www.churchofjesuschrist.org/bc/content/shared/content/images/gospel-library/manual/35686/35686_000_001_01_losAngelesCaliforniaTemple.jpg"
+    },
+    {
+        "name": "Bern Switzerland Temple",
+        "location": "Zollikofen, Switzerland",
+        "dedicationDate": "September 11, 1955",
+        "squareFootage": 38000,
+        "site": "7 acres",
+        "height": 140,
+        "ordinanceRooms": 4,
+        "sealingRooms": 2,
+        "baptismalFonts": 1,
+        "image": "https://www.churchofjesuschrist.org/bc/content/shared/content/images/gospel-library/manual/35686/35686_000_001_01_bernSwitzerlandTemple.jpg"
+    }
+]
