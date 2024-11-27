@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Plan for the Day</title>
+    <meta name="description" content="Meal Plan for the Day">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Montserrat", sans-serif;
+    }
+
+    #meal-plan-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+        grid-gap: 1rem;
+        margin: 1rem;
+    }
+
+    .meal-card {
+        border: 1px solid rgb(0 0 0 0.3);
+        padding: 1rem;
+        border-radius: 0.25rem;
+        background-color: #ab4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    h1 {
+        margin: 1rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    img {
+        width: 250px;
+        height: auto;
+        border: 1px solid #000;
+        box-shadow: 0 0 1rem #333;
+    }
+</style>
+
+<body>
+    <h1>Meal Plan for the Day</h1>
+    <div id="meal-plan-container">
+    </div>
+    <script>
+        const apiKey = '17a4954d6e284e17866421fae7be56d0';
+
+            fetch(`https://api.spoonacular.com/mealplanner/generate?apiKey=${apiKey}&timeFrame=day`)
+                .then(response => response.json())
+                .then(data => {
+                    const mealPlanContainer = document.getElementById('meal-plan-container');
+
+                    data.meals.forEach(meal => {
+                        const mealCard = document.createElement('div');
+                        mealCard.classList.add('meal-card');
+
+                        // Fetch meal image (this requires another API call)
+                        fetch(`https://api.spoonacular.com/recipes/${meal.id}/information?apiKey=${apiKey}`)
+                            .then(response => response.json())
+                            .then(recipeData => {
+                                console.log(recipeData);
+                                mealCard.innerHTML = `
+              <h2>${meal.title}</h2>
+              <img src="${recipeData.image}" alt="${meal.title}">
+              <p>Ready in ${meal.readyInMinutes} minutes</p>
+              <p>Servings: ${meal.servings}</p>
+              <a href="${meal.sourceUrl}" target="_blank">View Recipe</a>
+            `;
+                            });
+
+                        mealPlanContainer.appendChild(mealCard);
+                    });
+                });
+    </script>
+</body>
+
+</html>
